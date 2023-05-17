@@ -1,0 +1,1049 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.loli.net/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+.mac-os-11 { --title-bar-height:28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex:2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+
+
+.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background: inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); background: inherit; white-space: nowrap; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background: inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background: inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; outline: 0px; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: auto hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 10px; z-index: 3; overflow-y: hidden; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; background: 0px 0px !important; border: none !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-radius: 0px; border-width: 0px; background: 0px 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; overflow-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; }
+.CodeMirror-wrap pre { overflow-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right: 30px solid transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; inset: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background: rgba(255, 255, 0, 0.4); }
+span.cm-underlined { text-decoration: underline; }
+span.cm-strikethrough { text-decoration: line-through; }
+.cm-tw-syntaxerror { color: rgb(255, 255, 255); background-color: rgb(153, 0, 0); }
+.cm-tw-deleted { text-decoration: line-through; }
+.cm-tw-header5 { font-weight: 700; }
+.cm-tw-listitem:first-child { padding-left: 10px; }
+.cm-tw-box { border-style: solid; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-color: inherit; border-top-width: 0px !important; }
+.cm-tw-underline { text-decoration: underline; }
+@media print {
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
+/* meyer reset -- http://meyerweb.com/eric/tools/css/reset/ , v2.0 | 20110126 | License: none (public domain) */
+
+@include-when-export url(https://fonts.loli.net/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+
+/* =========== */
+
+/* pt-serif-regular - latin */
+/* pt-serif-italic - latin */
+/* pt-serif-700 - latin */
+/* pt-serif-700italic - latin */
+:root {
+	--active-file-bg-color: #dadada;
+	--active-file-bg-color: rgba(32, 43, 51, 0.63);
+	--active-file-text-color: white;
+	--bg-color: #f3f2ee;
+	--text-color: #1f0909;
+	--control-text-color: #444;
+	--rawblock-edit-panel-bd: #e5e5e5;
+
+	--select-text-bg-color: rgba(32, 43, 51, 0.63);
+  --select-text-font-color: white;
+}
+
+pre {
+	--select-text-bg-color: #36284e;
+	--select-text-font-color: #fff;
+}
+
+html {
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+}
+
+html, body {
+	background-color: #f3f2ee;
+	font-family: "PT Serif", 'Times New Roman', Times, serif;
+	color: #1f0909;
+	line-height: 1.5em;
+}
+
+/*#write {
+	overflow-x: auto;
+    max-width: initial;
+	padding-left: calc(50% - 17em);
+    padding-right: calc(50% - 17em);
+}
+
+@media (max-width: 36em) {
+ 	#write {
+ 		padding-left: 1em;
+    	padding-right: 1em;
+ 	}
+}*/
+
+#write {
+	max-width: 40em;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+			max-width: 914px;
+	}
+}
+
+ol li {
+	list-style-type: decimal;
+	list-style-position: outside;
+}
+ul li {
+	list-style-type: disc;
+	list-style-position: outside;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* styles */
+
+/* ====== */
+
+/* headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+}
+h1 {
+	font-size: 1.875em;
+	/*30 / 16*/
+	line-height: 1.6em;
+	/* 48 / 30*/
+	margin-top: 2em;
+}
+h2,
+h3 {
+	font-size: 1.3125em;
+	/*21 / 16*/
+	line-height: 1.15;
+	/*24 / 21*/
+	margin-top: 2.285714em;
+	/*48 / 21*/
+	margin-bottom: 1.15em;
+	/*24 / 21*/
+}
+h3 {
+	font-weight: normal;
+}
+h4 {
+	font-size: 1.125em;
+	/*18 / 16*/
+	margin-top: 2.67em;
+	/*48 / 18*/
+}
+h5,
+h6 {
+	font-size: 1em;
+	/*16*/
+}
+h1 {
+	border-bottom: 1px solid;
+	margin-bottom: 1.875em;
+	padding-bottom: 0.8125em;
+}
+/* links */
+
+a {
+	text-decoration: none;
+	color: #065588;
+}
+a:hover,
+a:active {
+	text-decoration: underline;
+}
+/* block spacing */
+
+p,
+blockquote,
+.md-fences {
+	margin-bottom: 1.5em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 1.5em;
+}
+/* blockquote */
+
+blockquote {
+	font-style: italic;
+	border-left: 5px solid;
+	margin-left: 2em;
+	padding-left: 1em;
+}
+/* lists */
+
+ul,
+ol {
+	margin: 0 0 1.5em 1.5em;
+}
+/* tables */
+.md-meta,.md-before, .md-after {
+	color:#999;
+}
+
+table {
+	margin-bottom: 1.5em;
+	/*24 / 16*/
+	font-size: 1em;
+	/* width: 100%; */
+}
+thead th,
+tfoot th {
+	padding: .25em .25em .25em .4em;
+	text-transform: uppercase;
+}
+th {
+	text-align: left;
+}
+td {
+	vertical-align: top;
+	padding: .25em .25em .25em .4em;
+}
+
+code,
+.md-fences {
+	background-color: #dadada;
+}
+
+code {
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.md-fences {
+	margin-left: 2em;
+	margin-bottom: 3em;
+	padding-left: 1ch;
+	padding-right: 1ch;
+}
+
+pre,
+code,
+tt {
+	font-size: .875em;
+	line-height: 1.714285em;
+}
+/* some fixes */
+
+h1 {
+	line-height: 1.3em;
+	font-weight: normal;
+	margin-bottom: 0.5em;
+}
+
+p + ul,
+p + ol{
+	margin-top: .5em;
+}
+
+h3 + ul,
+h4 + ul,
+h5 + ul,
+h6 + ul,
+h3 + ol,
+h4 + ol,
+h5 + ol,
+h6 + ol {
+	margin-top: .5em;
+}
+
+li > ul,
+li > ol {
+	margin-top: inherit;
+	margin-bottom: 0;
+}
+
+li ol>li {
+	list-style-type: lower-alpha;
+}
+
+li li ol>li{
+	list-style-type: lower-roman;
+}
+
+h2,
+h3 {
+	margin-bottom: .75em;
+}
+hr {
+	border-top: none;
+	border-right: none;
+	border-bottom: 1px solid;
+	border-left: none;
+}
+h1 {
+	border-color: #c5c5c5;
+}
+blockquote {
+	border-color: #bababa;
+	color: #656565;
+}
+
+blockquote ul,
+blockquote ol {
+	margin-left:0;
+}
+
+.ty-table-edit {
+	background-color: transparent;
+}
+thead {
+	background-color: #dadada;
+}
+tr:nth-child(even) {
+	background: #e8e7e7;
+}
+hr {
+	border-color: #c5c5c5;
+}
+.task-list{
+	padding-left: 1rem;
+}
+
+.md-task-list-item {
+	padding-left: 1.5rem;
+	list-style-type: none;
+}
+
+.md-task-list-item > input:before {
+	content: '\221A';
+	display: inline-block;
+	width: 1.25rem;
+  	height: 1.6rem;
+	vertical-align: middle;
+	text-align: center;
+	color: #ddd;
+	background-color: #F3F2EE;
+}
+
+.md-task-list-item > input:checked:before,
+.md-task-list-item > input[checked]:before{
+	color: inherit;
+}
+
+#write pre.md-meta-block {
+	min-height: 1.875rem;
+	color: #555;
+	border: 0px;
+	background: transparent;
+	margin-top: -4px;
+	margin-left: 1em;
+	margin-top: 1em;
+}
+
+.md-image>.md-meta {
+	color: #9B5146;
+}
+
+.md-image>.md-meta{
+	font-family: Menlo, 'Ubuntu Mono', Consolas, 'Courier New', 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', serif;
+}
+
+
+#write>h3.md-focus:before{
+	left: -1.5rem;
+	color:#999;
+	border-color:#999;
+}
+#write>h4.md-focus:before{
+	left: -1.5rem;
+	top: .25rem;
+	color:#999;
+	border-color:#999;
+}
+#write>h5.md-focus:before{
+	left: -1.5rem;
+	top: .0.3125rem;
+	color:#999;
+	border-color:#999;
+}
+#write>h6.md-focus:before{
+	left: -1.5rem;
+	top: 0.3125rem;
+	color:#999;
+	border-color:#999;
+}
+
+.md-toc:focus .md-toc-content{
+	margin-top: 19px;
+}
+
+.md-toc-content:empty:before{
+	color: #065588;
+}
+.md-toc-item {
+	color: #065588;
+}
+#write div.md-toc-tooltip {
+	background-color: #f3f2ee;
+}
+
+#typora-sidebar {
+	background-color: #f3f2ee;
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375);
+  	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375);
+}
+
+.pin-outline #typora-sidebar {
+	background: inherit;
+	box-shadow: none;
+	border-right: 1px dashed;
+}
+
+.pin-outline #typora-sidebar:hover .outline-title-wrapper {
+	border-left:1px dashed;
+}
+
+.outline-item:hover {
+  background-color: #dadada;
+  border-left: 28px solid #dadada;
+  border-right: 18px solid #dadada;
+}
+
+.typora-node .outline-item:hover {
+  	border-right: 28px solid #dadada;
+}
+
+.outline-expander:before {
+  content: "\f0da";
+  font-family: FontAwesome;
+  font-size:14px;
+  top: 1px;
+}
+
+.outline-expander:hover:before,
+.outline-item-open>.outline-item>.outline-expander:before {
+  content: "\f0d7";
+}
+
+.modal-content {
+	background-color: #f3f2ee;
+}
+
+.auto-suggest-container ul li {
+	list-style-type: none;
+}
+
+/** UI for electron */
+
+.megamenu-menu,
+#top-titlebar, #top-titlebar *,
+.megamenu-content {
+	background: #f3f2ee;
+	color: #1f0909;
+}
+
+.megamenu-menu-header {
+	border-bottom: 1px dashed #202B33;
+}
+
+.megamenu-menu {
+	box-shadow: none;
+	border-right: 1px dashed;
+}
+
+header, .context-menu, .megamenu-content, footer {
+	font-family: "PT Serif", 'Times New Roman', Times, serif;
+    color: #1f0909;
+}
+
+#megamenu-back-btn {
+	color: #1f0909;
+	border-color: #1f0909;
+}
+
+.megamenu-menu-header #megamenu-menu-header-title:before {
+	color: #1f0909;
+}
+
+.megamenu-menu-list li a:hover, .megamenu-menu-list li a.active {
+	color: inherit;
+	background-color: #e8e7df;
+}
+
+.long-btn:hover {
+	background-color: #e8e7df;
+}
+
+#recent-file-panel tbody tr:nth-child(2n-1) {
+    background-color: transparent !important;
+}
+
+.megamenu-menu-panel tbody tr:hover td:nth-child(2) {
+    color: inherit;
+}
+
+.megamenu-menu-panel .btn {
+	background-color: #D2D1D1;
+}
+
+.btn-default {
+	background-color: transparent;
+}
+
+.typora-sourceview-on #toggle-sourceview-btn,
+.ty-show-word-count #footer-word-count {
+	background: #c7c5c5;
+}
+
+#typora-quick-open {
+    background-color: inherit;
+}
+
+.md-diagram-panel {
+	margin-top: 8px;
+}
+
+.file-list-item-file-name {
+	font-weight: initial;
+}
+
+.file-list-item-summary {
+	opacity: 1;
+}
+
+.file-list-item {
+	color: #777;
+}
+
+.file-list-item.active {
+	background-color: inherit;
+	color: black;
+}
+
+.ty-side-sort-btn.active {
+	background-color: inherit;
+}
+
+.file-list-item.active .file-list-item-file-name  {
+	font-weight: bold;
+}
+
+.file-list-item{
+    opacity:1 !important;
+}
+
+.file-library-node.active>.file-node-background{
+	background-color: rgba(32, 43, 51, 0.63);
+	background-color: var(--active-file-bg-color);
+}
+
+.file-tree-node.active>.file-node-content{
+	color: white;
+	color: var(--active-file-text-color);
+}
+
+.md-task-list-item>input {
+	margin-left: -1.7em;
+	margin-top: calc(1rem - 12px);
+	-webkit-appearance: button;
+}
+
+input {
+	border: 1px solid #aaa;
+}
+
+.megamenu-menu-header #megamenu-menu-header-title,
+.megamenu-menu-header:hover, 
+.megamenu-menu-header:focus {
+	color: inherit;
+}
+
+.dropdown-menu .divider {
+	border-color: #e5e5e5;
+	opacity: 1;
+}
+
+/* https://github.com/typora/typora-issues/issues/2046 */
+.os-windows-7 strong,
+.os-windows-7 strong  {
+	font-weight: 760;
+}
+
+.ty-preferences .btn-default {
+	background: transparent;
+}
+
+.ty-preferences .window-header {
+	border-bottom: 1px dashed #202B33;
+	box-shadow: none;
+}
+
+#sidebar-loading-template, #sidebar-loading-template.file-list-item {
+	color: #777;
+}
+
+.searchpanel-search-option-btn.active {
+	background: #777;
+	color: white;
+}
+
+.export-detail, .light .export-detail, 
+.light .export-item.active, 
+.light .export-items-list-control {
+	background: #e0e0e0;
+	border-radius: 2px;
+	font-weight: 700;
+	color: inherit
+}
+
+
+mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax="SVG"] > svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][display="true"][width="full"] {
+  display: flex;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line], svg[data-table] > g > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame], svg[data-table] > g > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed, svg[data-table] > g > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted, svg[data-table] > g > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > g > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax="SVG2"] path[data-c], mjx-container[jax="SVG2"] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node="xypic"] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node="xypic"] path {
+  stroke-width: inherit;
+}
+mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
+							stroke-width: 0;
+						}
+</style><title>Linux知识点整理</title>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><p><span>2023/5/12</span></p><h1 id='linux知识点整理'><span>Linux知识点整理</span></h1><p>&nbsp;</p><h2 id='1-终端和主机'><span>1 终端和主机</span></h2><p><span>终端：主机的输入和输出设备</span></p><p><span>主机：程序和数据的存储及处理</span></p><p>&nbsp;</p><h2 id='2-行律与驱动程序'><span>2 行律与驱动程序</span></h2><p><span>驱动程序：不同的硬件需要不同的驱动程序</span></p><p><span>行律：进行一行内字符的加工（缓冲、回显与编辑）</span></p><p>&nbsp;</p><h2 id='3-流量控制'><span>3 流量控制</span></h2><p><span>主机与终端之间进行流量控制：</span></p><ul><li><p><span>硬件方式：RS232接口的CTS信号线</span></p></li><li><p><span>软件方式：</span><code>Ctrl+S</code><span>暂停，</span><code>Ctrl+Q</code><span>恢复</span></p></li></ul><p>&nbsp;</p><h2 id='4-一些基础命令'><span>4 一些基础命令</span></h2><div contenteditable="false" spellcheck="false" class="mathjax-block md-end-block md-math-block md-rawblock" id="mathjax-n21" cid="n21" mdtype="math_block" data-math-tag-before="0" data-math-tag-after="0" data-math-labels="[]"><div class="md-rawblock-container md-math-container" tabindex="-1"><mjx-container class="MathJax" jax="SVG" display="true" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="17.476ex" height="2.149ex" role="img" focusable="false" viewBox="0 -750 7724.5 950" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.452ex;"><defs><path id="MJX-1-TEX-I-1D43F" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path><path id="MJX-1-TEX-I-1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path><path id="MJX-1-TEX-I-1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-1-TEX-I-1D462" d="M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-1-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D43F" xlink:href="#MJX-1-TEX-I-1D43F"></use></g><g data-mml-node="mi" transform="translate(681,0)"><use data-c="1D456" xlink:href="#MJX-1-TEX-I-1D456"></use></g><g data-mml-node="mi" transform="translate(1026,0)"><use data-c="1D45B" xlink:href="#MJX-1-TEX-I-1D45B"></use></g><g data-mml-node="mi" transform="translate(1626,0)"><use data-c="1D462" xlink:href="#MJX-1-TEX-I-1D462"></use></g><g data-mml-node="mi" transform="translate(2198,0)"><use data-c="1D465" xlink:href="#MJX-1-TEX-I-1D465"></use></g><g data-mml-node="mtext" transform="translate(2770,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="825.5px" font-family="serif">对</text></g><g data-mml-node="mtext" transform="translate(3595.9,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="825.5px" font-family="serif">大</text></g><g data-mml-node="mtext" transform="translate(4421.9,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="825.5px" font-family="serif">小</text></g><g data-mml-node="mtext" transform="translate(5247.2,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="825.5px" font-family="serif">写</text></g><g data-mml-node="mtext" transform="translate(6072.6,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="825.5px" font-family="serif">敏</text></g><g data-mml-node="mtext" transform="translate(6898.6,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="825.5px" font-family="serif">感</text></g></g></g></svg><mjx-assistive-mml unselectable="on" display="block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>L</mi><mi>i</mi><mi>n</mi><mi>u</mi><mi>x</mi><mtext>对</mtext><mtext>大</mtext><mtext>小</mtext><mtext>写</mtext><mtext>敏</mtext><mtext>感</mtext></math></mjx-assistive-mml></mjx-container></div></div><ul><li><p><span>创建新用户（root用户执行）：</span><code>useradd</code><span>，用户信息存放在</span><code>etc/passwd</code><span>文件中</span></p></li><li><p><code>man</code><span>手册，</span><code>q</code><span>退出，</span><code>空格</code><span>下一页，</span><code>上下箭头</code><span>上移下移</span></p><ul><li><p><code>man name</code></p></li><li><p><code>man section name</code></p></li><li><p><code>man -k regexp</code><span>，正则表达式</span><code>regexp</code></p></li></ul></li><li><p><code>date</code><span>时间，定制格式</span><code>date &quot;+%Y-%m-%d %H:%M:%S Day %j&quot;</code><span>（</span><code>j</code><span>表示是今天的第几天）以及</span><code>date &quot;+%s&quot;</code></p></li><li><p><code>cal</code><span>打印日历</span></p><ul><li><p><code>cal year</code></p></li><li><p><code>cal month year</code></p></li></ul></li><li><p><span>计算机</span><code>bc</code><span>，指定精度</span><code>bc -l</code><span>（小数点后20位）</span></p></li><li><p><span>改密码</span><code>passwd</code></p></li><li><p><span>谁在系统中</span><code>who</code><span>，相关的：</span></p><ul><li><p><code>whoami</code></p></li><li><p><code>who am i</code></p></li><li><p><code>tty</code><span>打印出当前终端的设备文件名</span></p></li></ul></li><li><p><code>uptime</code><span>：系统自启动后到现在的运行时间+当前登入系统的用户总数+近期1分钟/5分钟/15分钟内CPU负载</span></p></li><li><p><code>top</code><span>：列出资源占用考前的进程</span></p><ul><li><p><span>VIRT：进程逻辑地址空间大小</span></p></li><li><p><span>RES：驻留内存数，即占用的物理内存数</span></p></li><li><p><span>SHR：与其他进程共享的内存数</span></p></li><li><p><span>%CPU：占用CPU的百分比</span></p></li><li><p><span>%MEM：占用内存的百分比</span></p></li><li><p><span>TIME+：占用CPU的时间</span></p></li></ul></li><li><p><code>ps</code><span>：就是peocess state，选项包括：</span></p><ul><li><p><span>无选项：只列出当前终端上的进程，包括PID/TTY/TIME/COMAND</span></p></li><li><p><code>e</code><span>：列出系统所有进程</span></p></li><li><p><code>f</code><span>：full格式</span></p></li><li><p><code>l</code><span>：long格式</span></p></li></ul><p><code>ps</code><span>列出的内容包括：</span></p><ul><li><p><span>用户UID</span></p></li><li><p><span>进程PID</span></p></li><li><p><span>CPU占用指数C（最近一段时间进程占用CPU情况）</span></p></li><li><p><span>启动时间STIME</span></p></li><li><p><span>进程逻辑内存大小SZ</span></p></li><li><p><span>终端名TTY</span></p></li><li><p><span>命令COMMAND</span></p></li><li><p><span>进程在内存的何处休眠WCHAN</span></p></li><li><p><span>累计执行时间TIME（占用CPU时间）</span></p></li><li><p><span>优先级PRI</span></p></li><li><p><span>状态S，sleep/run/zombie</span></p></li></ul></li><li><p><code>free</code><span>：了解内存使用情况？？？？？？？？？？？？？？？？？？？？？</span></p></li><li><p><code>vmstat</code><span>：？？？？？？？？？？？？？？？？？？？？？？？？？？？？</span></p></li></ul><p>&nbsp;</p><h2 id='5-文本处理'><span>5 文本处理</span></h2><ul><li><p><code>more/less</code><span>：逐屏显示文件，</span><code>more shudu.c</code><span>，</span><code>ls -l |less</code><span>，对于</span><code>more</code><span>：</span></p><ul><li><p><span>空格：显示下一屏</span></p></li><li><p><span>回车：上滚一行</span></p></li><li><p><code>q</code><span>：退出程序</span></p></li><li><p><code>/pattern</code><span>：搜索指定模式的字符串</span></p></li><li><p><code>h</code><span>：帮助信息</span></p></li><li><p><code>Ctrl+L</code><span>：屏幕刷新</span></p></li></ul><p><span>对于</span><code>less</code><span>：功能更强</span></p></li><li><p><code>cat</code><span>：列出文件内容，文本格式打印</span></p><ul><li><p><code>cat &gt; try</code><span>：从标准输入获取数据，输入到</span><code>try</code><span>文件中</span></p></li></ul></li><li><p><code>od</code><span>：逐字节打印，选项：</span></p><ul><li><p><code>-t</code><span>：十六进制打印各字节</span></p></li><li><p><code>-c</code><span>：逐字符打印，遇到不可打印字符打印编码</span></p></li></ul></li><li><p><code>head -n 10</code><span>：显示文件的前</span><code>10</code><span>行（</span><code>head -n -20</code><span>：去除文件尾部20行以外都算作head）</span></p></li><li><p><code>tail -n 10</code><span>：显示文件的尾</span><code>20</code><span>行（</span><code>tail -n +20</code><span>：去除文件头部20行以外都算作tail）</span>
+<code>tail -f</code><span>：实时打印文件尾部被追加的内容</span></p></li><li><p><span>一个样例：</span><code>ls -s | sort | head -n 20</code></p></li><li><p><code>tee</code><span>：将从标准输入得到的数据抄送到标准输出显示，同时存入磁盘文件中，</span><code>./myap | tee myap.log</code></p></li><li><p><code>wc</code><span>：字计数，列出文件中一共有多少行，有多少个单词，多少字符（当指定文件数量大于一时，还给出一个总计）。选项</span><code>-l</code><span>只列出行计数。</span><code>wc sum.c</code><span>，</span><code>wc -l *.c makefile start.sh</code></p></li><li><p><code>sort</code><span>：对文件内容排序（按照字符串比较规则），选项</span><code>-n</code><span>表示对于数字按照算数值大小排序</span></p></li><li><p><code>tr</code><span>：翻译字符，</span><code>tr string1 string2</code><span>，</span><code>string1</code><span>中出现的字符替换为</span><code>string2</code><span>中对应字符，例如：</span>
+<code>cat report | tr &#39;[a-z]&#39; &#39;[A-Z]&#39;</code><span>，</span><code>cat file1 | tr % &#39;\012&#39;</code><span>（百分号改为换行符）</span></p></li><li><p><code>uniq</code><span>：筛选文件中重复的行，</span><code>uniq options</code><span>，</span><code>uniq options input-file</code><span>，</span><code>uniq options input-file output-file</code><span>，重复的行定义为紧邻的两行内容相同，选项：</span></p><ul><li><p><code>-u</code><span>：只保留没有重复的行</span></p></li><li><p><code>-d</code><span>：只保留有重复的行（但只打印一次）</span></p></li><li><p><span>没有上面两个选项，打印没有重复的行和有重复的行（只打印一次）</span></p></li><li><p><code>-c</code><span>：计数同样的行出现几次</span></p></li></ul></li></ul><p>&nbsp;</p><h2 id='6-正则表达式'><span>6 正则表达式</span></h2><p><span>正则表达式：</span></p><ul><li><p><span>应用范围：字符串匹配操作和替换操作。举例：Linux中的vi/more/grep/yacc/lex/awk/sed等</span></p></li><li><p><span>功能：描述一个字符串的模式</span></p></li><li><p><span>注意与文件名通配符区分：</span></p><ul><li><p><span>正则表达式规则用于文本处理场合</span></p></li><li><p><span>文件名匹配规则用于文件处理场合</span></p></li></ul></li><li><p><span>正则表达式的元字符：</span></p><ul><li><p><code>.</code><span>：匹配任意单字符</span></p></li><li><p><code>*</code><span>：单字符后接</span><code>*</code><span>，表示这个单字符零次或多次出现（这个单字符可以是空格！）</span></p></li><li><p><code>[</code><span>：</span><code>[]</code><span>中为集合内容，必须与其中的某一个匹配。</span><code>.*\</code><span>这三个在中括号内表示自己。</span><code>[][]</code><span>匹配</span><code>][</code><span>这两个字符之一</span></p></li><li><p><code>\</code></p></li><li><p><code>^</code><span>：在中括号内开头（不在开头则失去补集意义）表示补集，</span><code>[^a-z]</code><span>匹配任意非小写字母。</span><code>[^][]</code><span>表示匹配任意非中括号字符。在中括号外时，仅在首部有意义，否则与其自身匹配</span></p></li><li><p><code>$</code><span>：在尾部有特殊意义，否则与其自身匹配</span></p></li></ul></li><li><p><span>正则表达式的扩展？？？？？？？？？？？？？？？？？？</span></p></li></ul><p>&nbsp;</p><h2 id='7-行筛选grep'><span>7 行筛选grep</span></h2><p><span>基本用法：</span><code>grep 模式 文件名列表</code><span>，举例：</span></p><ul><li><p><code>grep O_RDWR *.h</code></p></li><li><p><code>ps -ef | grep liang</code></p></li><li><p><code>ls -l / | hrep &#39;^d&#39; | wc -l</code></p></li><li><p><code>grep &#39;[0-9]*&#39; shudu.c</code></p></li><li><p><code>grep &#39;[0-9][0-9]*&#39; shudu.c</code></p></li></ul><p><code>grep</code><span>选项：</span></p><ul><li><p><code>-F</code><span>：按字符串搜索（而不是正则表达式）</span></p></li><li><p><code>-G</code><span>：基础正则表达式</span></p></li><li><p><code>-E</code><span>：扩展正则表达式</span></p></li><li><p><code>-P</code><span>：按PCRE搜索</span></p></li><li><p><code>-n</code><span>：显示时在每行前面显示行号</span></p></li><li><p><code>-v</code><span>：显示所有不包含模式的行</span></p></li><li><p><code>-i</code><span>：字母比较时忽略字母的大小写</span></p></li></ul><p>&nbsp;</p><h2 id='8-流编辑sed'><span>8 流编辑sed</span></h2><p><span>基本用法：</span></p><ul><li><p><code>sed &#39;命令&#39; 文件列表</code></p></li><li><p><code>sed -e &#39;命令1&#39; -e &#39;命令2&#39; -e &#39;命令3&#39; 文件名列表</code></p></li><li><p><code>sed -f 命令文件 文件名列表</code></p></li></ul><p><span>举例：</span></p><ul><li><p><code>tail -f pppd.log | sed &#39;s/145\.137\.23\26/桥西/g&#39;</code></p></li><li><p><code>cat pm.txt | sed &#39;s/\[[^][]*]//g&#39;</code><span>：？？？？？？？？？？？？？？？？</span></p></li></ul><p>&nbsp;</p><p><code>sed</code><span>中的正则表达式替换：可以在模式中添加</span><code>\(</code><span>和</span><code>\)</code><span>不影响匹配操作，但可以进行替换操作，例如：</span><code>s/\([0-9][0-9]\)-\([0-9][0-9]\)-\([0-9][0-9]*\)/\3.\1.\2/g</code><span>这条命令将日期格式“月-日-年”改为“年-月-日”。</span></p><p>&nbsp;</p><h2 id='9-文本加工awk'><span>9 文本加工awk</span></h2><p><span>基本用法：</span></p><ul><li><p><code>awk &#39;程序&#39; 文件名列表</code></p></li><li><p><code>awk -f 程序文件名 文件名列表</code></p></li><li><p><span>处理逻辑：对于符合条件的行，执行相应的动作</span></p></li></ul><p>&nbsp;</p><p><code>awk</code><span>中条件描述方法：</span></p><ul><li><p><span>使用C语言类似的关系算符，如</span><code>&lt;</code><span>等</span></p></li><li><p><span>使用C语言类似的逻辑算符，如</span><code>&amp;&amp;</code><span>等</span></p></li><li><p><span>正则表达式模式匹配：包含该模式的行视为满足条件</span></p></li><li><p><span>特殊条件：</span></p><ul><li><p><span>不指定任何条件，对每一行执行动作</span></p></li><li><p><code>BEGIN</code><span>：开始处理所有文本行之前执行动作</span></p></li><li><p><code>END</code><span>：处理完所有文本行之后执行动作</span></p></li></ul></li></ul><p>&nbsp;</p><p><code>awk</code><span>中动作描述方法：</span></p><ul><li><p><span>自定义变量</span></p></li><li><p><span>加减乘除等算数逻辑运算</span></p></li><li><p><span>正则表达式匹配运算符（用作条件判断）</span></p></li><li><p><span>流程控制（与C语言类似）：条件判断</span><code>if</code><span>，循环控制</span><code>for</code></p></li><li><p><code>print 变量1, 变量2, ...</code></p></li><li><p><code>printf(&quot;格式串&quot;, 变量1, 变量2, ,,,)</code></p></li></ul><p>&nbsp;</p><p><code>awk</code><span>举例：</span></p><ul><li><p><code>ps -ef | awk &#39;/guest/{ printf(&quot;%s &quot;, $2); }&#39;</code></p></li><li><p><code>awk &#39;{printf(&quot;%d: %s\n&quot;, NR, $0); }&#39; test.c</code></p></li><li><p><code>date | awk &#39;{print $4}&#39;</code></p></li><li><p><code>ls -s | awk &#39;$1 &gt; 2000 { print $2 }&#39;</code></p></li></ul><p>&nbsp;</p><h2 id='10-文件内容比对'><span>10 文件内容比对</span></h2><p><code>cmp</code><span>命令用于逐字节比较两个文件是否完全相同：</span></p><ul><li><p><span>完全相同时不给出任何提示</span></p></li><li><p><span>不同时，打印出第一个不同之处</span></p></li></ul><p>&nbsp;</p><p><code>md5sum/sha1sum</code><span>也可用于文件内容比较，MD5算法根据文件内容生成16字节的hash值，比较hash值是否相同，就可断定两文件内容是否完全相同。</span></p><p>&nbsp;</p><h2 id='11-文本文件差异'><span>11 文本文件差异</span></h2><p><code>diff</code><span>命令用于求出两文件的差别，基本用法：</span></p><ul><li><p><code>diff file1 file2</code><span>：normal格式输出</span></p></li><li><p><code>diff -u file1 file2</code><span>：unified格式输出</span></p></li></ul><p>&nbsp;</p><p><span>normal格式：</span></p><ul><li><p><code>25c25,26</code><span>：原文件的第25行更换成新文件的第25-26行</span></p></li><li><p><code>61,62a60</code><span>：原文件的第61到62行删除后，后面的内容与新文件的第60行之后一致</span></p></li><li><p><code>68a67,68</code><span>：原文件的第68行增加新文件中的第67到68行</span></p></li><li><p><span>输出时，</span><code>&gt;</code><span>后边的内容是需要在file1中增加的内容，</span><code>&lt;</code><span>后边的内容是需要从file1中删除的内容</span></p></li></ul><p>&nbsp;</p><h2 id='12-vi相关命令'><span>12 vi相关命令</span></h2><p><span>常见命令如下：</span></p><ul><li><p><code>set number</code><span>：每行左边显示行号</span></p></li><li><p><code>set tabstop=4</code><span>：制表符位置为4格对齐</span></p></li><li><p><code>:set</code><span>：运行时检查偏好设置</span></p></li><li><p><code>i</code><span>：在当前字符前插入正文段</span></p></li><li><p><code>a</code><span>：在当前字符后插入正文段</span></p></li><li><p><code>h</code><span>：光标左移一列</span></p></li><li><p><code>j</code><span>：光标下移一行</span></p></li><li><p><code>k</code><span>：光标上移一行</span></p></li><li><p><code>l</code><span>：光标右移一列</span></p></li><li><p><code>5h</code><span>：光标左移5列，类似地，上面四个都可以在前面加上数字</span></p></li><li><p><code>Ctrl+b</code><span>：向后翻页，可用</span><code>PgUp</code><span>键代替</span></p></li><li><p><code>Ctrl+f</code><span>：向前翻页，可用</span><code>PgDn</code><span>键代替</span></p></li><li><p><span>两个翻页指令同样支持数字，例如</span><code>6Ctrl+f</code><span>（向前翻6页）</span></p></li><li><p><code>^</code><span>：将光标移至当前行首</span></p></li><li><p><code>$</code><span>：将光标移至当前行尾</span></p></li><li><p><code>w</code><span>：移到右一个单词</span></p></li><li><p><code>b</code><span>：移到左一个单词（这两个命令同样可以接数字）</span></p></li><li><p><code>:</code><span>可用于移到指定的行，例如</span><code>:1</code><span>移到文件第一行，</span><code>:$</code><span>将光标移到文件尾</span></p></li><li><p><span>在描述行号时，</span><code>.</code><span>可以代表当前行号，</span><code>$</code><span>可以代表最后一行的行号</span></p></li><li><p><code>%</code><span>：把光标移到一个花括号（或圆括号、方括号）上，按下</span><code>%</code><span>键，则光标自动定位到与它配对的那一个括号</span></p></li><li><p><code>x</code><span>：删除当前字符，</span><code>5x</code><span>删除从当前光标开始的5个字符</span></p></li><li><p><code>dd</code><span>：删除当前行，</span><code>3dd</code><span>删除从当前行开始的3行</span></p></li><li><p><code>r</code><span>：用于字符替换，</span><code>ra</code><span>将当前光标所指的字符替换为a，</span><code>rarbrc</code><span>将当前光标开始的三个字符替换为abc</span></p></li><li><p><code>u</code><span>：取消上一次的编辑操作</span></p></li><li><p><code>.</code><span>：重复上一次的编辑操作，例如上一次</span><code>3dd</code><span>删除了3行，则按</span><code>.</code><span>便会再删除3行</span></p></li><li><p><code>zz</code><span>和</span><code>:wq</code><span>：存盘退出</span></p></li><li><p><code>:w</code><span>：存盘不退出</span></p></li><li><p><code>:q!</code><span>：不存盘退出</span></p></li><li><p><code>:r xyz.c</code><span>：读入文件</span><code>xyz.c</code><span>插入到当前行之下</span></p></li><li><p><code>:50,$w file1</code><span>：写文件，把第50行至文件尾的内容写到文件file1中（如果</span><code>$w!</code><span>则为强制覆盖）</span></p></li><li><p><code>:10,50d</code><span>：删除第10至50行，并拷贝到剪切板</span></p></li><li><p><code>:1,.d</code><span>：删除文件首至当前行的部分，并拷贝到剪切板</span></p></li><li><p><code>:10,50y</code><span>：不删除，直接将第10行到50行的内容拷贝到剪切板</span></p></li><li><p><code>p</code><span>：粘贴剪切板信息</span></p></li><li><p><code>:5,10co56</code><span>：复制第5到10行到第56行之下</span></p></li><li><p><code>:8,34m78</code><span>：移动第8到34行到第78行之下</span></p></li><li><p><code>J</code><span>：两行合并（下面的行合并到当前行）</span></p></li><li><p><code>Ctrl+l</code><span>：刷新屏幕显示</span></p></li><li><p><code>Ctrl+g</code><span>：在屏幕最下面一行列出正在编辑的文件的名字、总行数、当前行号、文件是否被修改过等信息</span></p></li><li><p><code>/pattern</code><span>：正则表达式查找（是循环式搜索），例如</span><code>/[0-9][0-9]*</code><span>，</span><code>n</code><span>表示向下查找下一个next，</span><code>N</code><span>表示向上查找</span></p></li><li><p><code>:n1,n2,s/pattern/string/g</code><span>：替换命令，例如：</span></p><ul><li><p><code>:1,$s/ $//g</code><span>消除尾部多余的空格</span></p></li><li><p><code>:1,$s/a\[i]\*b\[j]/x[k]*y[n]/g</code><span>将</span><code>a[i]*b[j]</code><span>替换为</span><code>x[k]*y[n]</code><span>命令</span></p></li><li><p><span>在模式替换的时候同样可以增加</span><code>\(</code><span>和</span><code>\)</code><span>，增强灵活性，例如“将</span><code>变量名-&gt;number</code><span>替换为</span><code>变量名-&gt;num</code><span>”功能由该命令实现：</span><code>:1$s/\([a-zA-Z_][a-zA-Z0-9_]*\)-&gt;number/\1-&gt;num/g</code></p></li></ul></li><li><p><code>Ctrl+Z</code><span>：将当前进程挂起，可以通过</span><code>jobs</code><span>列出当前被</span><code>stopped</code><span>的进程有哪些，然后通过</span><code>fg %1</code><span>将</span><code>1</code><span>号作业恢复到前台执行</span></p></li></ul><p>&nbsp;</p><h2 id='13-中文编码'><span>13 中文编码</span></h2><p><span>系统编码方案：</span></p><ul><li><p><span>Windows默认中文编码方案为</span><code>GBK</code><span>，两个字节表示一个汉字，字节的高位为1，以区别于ASCII码</span></p></li><li><p><span>许多Linux默认中文编码方案为</span><code>UTF8</code><span>，三个字节表示一个汉字，字节的高位为1，以区别于ASCII码</span></p></li></ul><p>&nbsp;</p><p><span>命令</span><code>iconv</code><span>可以替换中文字符编码：</span></p><ul><li><p><code>iconv -f gbk -t ytf8</code><span>：从</span><code>GBK</code><span>到</span><code>UTF8</code></p></li><li><p><code>iconv -f utf8 -t gbk</code><span>：从</span><code>UTF8</code><span>到</span><code>GBK</code></p></li></ul><p>&nbsp;</p><h2 id='14-文件与文件夹'><span>14 文件与文件夹</span></h2><p><span>文件名命名规则如下：</span></p><ul><li><p><span>名字长度允许1-255字符，有些UNIX不支持长文件名（但长度至少为1-14）</span></p></li><li><p><span>取名合法字符：除斜线之外的所有字符都是合法命名字符，不可打印字符也可以用做文件名，斜线留作路径分隔符</span></p></li><li><p><span>大小写敏感，例如</span><code>makefile</code><span>和</span><code>MakeFile</code><span>是不同的（但是在windows下是不敏感的，因此尽量不要利用大小写区分文件，不利于文件迁移）</span></p></li></ul><p>&nbsp;</p><p><span>系统中的目录：</span></p><ul><li><p><code>/etc</code><span>：主要是系统配置文件，例如</span><code>passwd</code><span>文件、</span><code>hosts</code><span>文件等</span></p></li><li><p><code>/tmp</code><span>：临时文件，每个用户都可以在此创建文件，但只能删除自己的文件</span></p></li><li><p><code>/var</code><span>：系统运行时需要改变的数据，例如系统日志</span><code>syslog</code><span>等</span></p></li><li><p><code>/bin</code><span>：系统常用命令，如</span><code>ls</code><span>、</span><code>ln</code><span>、</span><code>cp</code><span>、</span><code>cat</code><span>等命令</span></p></li><li><p><code>/usr/bin</code><span>：存放一些常用命令，如</span><code>ssh</code><span>、</span><code>ftp</code><span>、</span><code>make</code><span>、</span><code>gcc</code><span>、</span><code>git</code><span>等</span></p></li><li><p><code>/sbin,/usr/sbin</code><span>：系统管理员专用命令</span></p></li><li><p><code>/dev</code><span>：设备文件</span></p></li><li><p><code>/usr/include</code><span>：C语言头文件存放目录</span></p></li><li><p><code>/lib,/usr/lib</code><span>：存放各种链接库文件，指C语言的链接库文件，以及</span><code>terminfo</code><span>终端库等。静态链接库文件有</span><code>.a</code><span>后缀，动态链接库文件有</span><code>.so</code><span>后缀</span></p></li></ul><p>&nbsp;</p><h2 id='15-文件通配符'><span>15 文件通配符</span></h2><p><span>规则如下：</span></p><ul><li><p><code>*</code><span>：匹配任意长度的文件名字符串，但是</span><code>.</code><span>（为第一个字符时）和</span><code>/</code><span>必须显示匹配，比如</span><code>*file</code><span>匹配</span><code>file</code><span>文件，但是不匹配</span><code>.profile</code><span>文件</span></p></li><li><p><code>?</code><span>：匹配任意单字符</span></p></li><li><p><code>[]</code><span>：匹配括号内任一字符，也可以用</span><code>-</code><span>指定一个范围</span></p></li><li><p><code>~</code><span>（bash特有的）：</span><code>~</code><span>当前用户的主目录，</span><code>~kuan</code><span>用户kuan的主目录</span></p></li><li><p><code>.</code><span>文件与</span><code>..</code><span>文件：当前目录与上级目录</span></p></li></ul><p>&nbsp;</p><p><span>注意：</span></p><ul><li><p><span>文件名通配符与正则表达式规则不同，应用场合不同</span></p></li><li><p><span>不同种类的shell通配符规则会略有差别</span></p></li><li><p><span>windows中</span><code>*.*</code><span>匹配所有文件，而linux中</span><code>*.*</code><span>要求文件名中必须含有圆点</span></p></li></ul><p>&nbsp;</p><h2 id='16-shell与kernel'><span>16 shell与kernel</span></h2><p><span>shell是一个用户进程，如</span><code>/bin/bash</code><span>，对用户提供命令行界面，可以在此启动其他的应用程序（ap）使用操作系核心提供的功能：包括系统命令和用户编写的程序。shell处理文件名通配符，例如将文件通配符展开，然后才会执行命令。</span></p><p>&nbsp;</p><p><span>kernel是操作系统的核心，负责管理系统资源（包括内存、磁盘等），运行在核心态，通过软中断方式对用户态进程提供系统调用接口。</span></p><p>&nbsp;</p><h2 id='17-文件目录'><span>17 文件目录</span></h2><p><code>ls</code><span>命令的常见选项：</span></p><ul><li><p><code>-F</code><span>选项（</span><code>Flag</code><span>）：</span></p><ul><li><p><span>若列出的是目录，就在名字后面加上</span><code>/</code></p></li><li><p><span>若列出的是可执行文件，就在名字后面加上</span><code>*</code></p></li><li><p><span>若列出的是符号链接文件，就在名字后面加上</span><code>@</code></p></li><li><p><span>若列出的普通文件，则名字后面没有任何标记</span></p></li></ul></li><li><p><code>-l</code><span>选项：</span></p><ul><li><p><span>第一列：文件属性（</span><code>-</code><span>普通文件，</span><code>b</code><span>块设备文件，</span><code>d</code><span>目录文件，</span><code>c</code><span>字符设备文件，</span><code>l</code><span>符号链接文件，</span><code>p</code><span>命名管道命名文件）和文件的访问权限</span></p></li><li><p><span>第二列：文件的link数</span></p></li><li><p><span>第三列和第四列：文件主的名字和组名</span></p></li><li><p><span>第五列：按照文件类型</span></p><ul><li><p><span>普通磁盘文件：列出文件大小</span></p></li><li><p><span>目录：列出目录表大小，不是目录下文件长度之和</span></p></li><li><p><span>符号链接文件：列出符号链接文件自身的长度</span></p></li><li><p><span>字符设备和块设备文件：列出主设备号和次设备号</span></p></li><li><p><span>管道文件：列出管道内的数据长度</span></p></li></ul></li><li><p><span>第六列：文件最后一次被修改的日期和实际按</span></p></li><li><p><span>第七列：文件名，对于符号链接文件，附带出符号链接文件的内容</span></p></li></ul></li><li><p><code>-h</code><span>选项：以人类以读的方式打印信息</span></p></li><li><p><code>-d</code><span>选项：当</span><code>ls</code><span>的参数是目录时，不像默认情况那样列出目录下的文件，而是列出目录自身的信息</span></p></li><li><p><code>-a</code><span>选项：列出文件名首字符为圆点的文件（默认情况下不会列出）</span></p></li><li><p><code>-A</code><span>选项：功能与</span><code>-a</code><span>相同，但不列出</span><code>.</code><span>和</span><code>..</code><span>文件</span></p></li><li><p><code>-s</code><span>选项：列出文件占用的磁盘空间</span></p></li><li><p><code>-i</code><span>：列出文件的</span><code>i</code><span>节点号</span></p></li></ul><p>&nbsp;</p><h2 id='18-文件复制与删除'><span>18 文件复制与删除</span></h2><p><code>cp</code><span>命令用于拷贝文件，格式如下：</span></p><ul><li><p><code>cp file1 file2</code><span>：</span><code>file2</code><span>不存在则创建；</span><code>file2</code><span>存在且是文件则覆盖；</span><code>file2</code><span>存在且是目录则按下一种形式进行处理</span></p></li><li><p><code>cp file1 file2 ... filen dir</code><span>：</span><code>dir</code><span>必须是已经存在的一个目录</span></p></li></ul><p>&nbsp;</p><p><code>mv</code><span>命令用于移动文件（或者给文件或目录改名），格式如下：</span></p><ul><li><p><code>mv file1 file2</code></p></li><li><p><code>mv file1 file2 ... filen dir</code></p></li><li><p><code>mv dir1 dir2</code></p></li></ul><p>&nbsp;</p><p><code>rm</code><span>命令用于删除文件，格式如下为</span><code>rm file1 file2 ... filen</code><span>，选项为：</span></p><ul><li><p><code>-r</code><span>：递归地进行删除，参数为一个目录</span></p></li><li><p><code>-i</code><span>：每删除一个文件前需要操作员确认</span></p></li><li><p><code>-f</code><span>：强迫删除（包括只读文件也被删除且没有提示）</span></p></li><li><p><span>注意：正在运行的可执行程序文件不能被删除</span></p></li></ul><p>&nbsp;</p><p><span>当文件名中含有</span><code>-</code><span>时候，我们可以使用</span><code>--</code><span>来显式地结束选项输入，在</span><code>--</code><span>之后输入的字符均不被解释为选项。</span></p><p>&nbsp;</p><h2 id='19-目录相关命令'><span>19 目录相关命令</span></h2><p><span>常用命令如下：</span></p><ul><li><p><code>pwd</code><span>：打印当前工作目录</span></p></li><li><p><code>cd</code><span>：改变当前工作目录（注意，</span><code>cd</code><span>是shell的一个内部命令）</span></p></li><li><p><code>mkdir</code><span>：创建一个目录（选项</span><code>-p</code><span>自动创建路径中不存在的目录）</span></p></li><li><p><code>rmdir</code><span>：删除一个目录（要求被删除的目录中除了</span><code>.</code><span>和</span><code>..</code><span>以外没有其他文件或目录）</span></p></li><li><p><code>cp -r</code><span>：递归地复制一个目录，如果</span><code>dir2</code><span>存在则在</span><code>dir2</code><span>下新建子目录</span><code>dir1</code><span>并将内容拷贝到其中；如果</span><code>dir2</code><span>不存在则创建，然后拷贝</span><code>dir1</code><span>中内容至其中。选项：</span></p><ul><li><p><code>-v</code><span>：可以显示在复制目录时正在复制的文件的名字</span></p></li><li><p><code>-u</code><span>：增量拷贝，根据文件的时间戳，不拷贝相同的或者过时版本的文件，此时</span><code>dir1</code><span>和</span><code>dir2</code><span>位置颠倒不会导致灾难性后果</span></p></li></ul></li><li><p><code>find</code><span>：遍历目录树，该命令从指定的查找范围开始，递归地查找子目录，凡是满足条件的文件或目录都执行相关的动作，例如</span><code>find ver1.d ver2.d -name &#39;*.c&#39; -print</code><span>在当前目录的两个子目录</span><code>ver1.d</code><span>和</span><code>ver2.d</code><span>中查找与</span><code>*.c</code><span>匹配的文件名，并打印出响应文件的路径名。</span><code>find</code><span>命令关于条件的选项：</span></p><ul><li><p><code>-name wildname</code><span>：文件名（仅指路径名的最后一部分）需要与</span><code>wildname</code><span>相匹配</span></p></li><li><p><code>-regex pattern</code><span>：整个路径名与正则表达式</span><code>pattern</code><span>匹配</span></p></li><li><p><code>-type f/d/l/c/b/p</code><span>：类型检查（普通文件/目录/符号链接文件/字符设备文件/块设备文件/管道文件）</span></p></li><li><p><code>-size +/-n单位</code><span>：指定文件大小大于（</span><code>+</code><span>）、等于（</span><code>空格</code><span>）或小于（</span><code>-</code><span>）某大小，单位有：字符</span><code>c</code><span>、512字节的块（</span><code>b</code><span>）、</span><code>k</code><span>、</span><code>M</code><span>、</span><code>G</code><span>，默认为</span><code>b</code></p></li><li><p><code>-time +/-ndays</code><span>：文件最近修改时间</span></p></li><li><p><code>-newer file</code><span>：文件最近修改时间比</span><code>file</code><span>文件还要晚</span></p></li><li><p><code>-inum</code><span>：指定</span><code>i</code><span>节点号</span></p></li><li><p><code>-user, -nouser</code><span>：指定文件主</span></p></li><li><p><code>-group, -nogroup</code><span>：指定用户组</span></p></li><li><p><code>-links</code><span>：指定link数</span></p></li><li><p><code>-depth</code><span>：指定路径访问深度</span></p></li><li><p><code>-perm</code><span>：指定文件的访问权限</span></p></li><li><p><span>支持复合条件，即可以使用</span><code>()</code><span>、</span><code>-o</code><span>、</span><code>!</code><span>等表示多条件的与、或、非</span></p></li></ul><p><code>find</code><span>命令关于动作的选项：</span></p><ul><li><p><code>-print</code><span>：打印查找文件的路径名</span></p></li><li><p><code>-exec</code><span>：对查找到的目标执行某一命令，在</span><code>-exec</code><span>及随后的分号之间的内容作为一条命令（在这条命令的命令参数中，</span><code>{}</code><span>代表遍历到的目标文件的路径名</span></p></li><li><p><code>-ok</code><span>：与</span><code>-exec</code><span>类似，只是对查找到的木盒条件的目标执行一个命令之前需要经过操作员的确认</span></p></li></ul><p><code>find</code><span>命令的例子：</span></p><ul><li><p><code>find . ! -type d -links +2 -print</code><span>：从当前目录开始检索link数大于2的非（注意“非”！）目录文件</span></p></li><li><p><code>find ~ -size +100k \( -name core -o -name &#39;*.tmp&#39; \) -print</code><span>：从当前用户主目录开始查找大小大于100kb且名字为</span><code>core</code><span>或者满足</span><code>*.tmp</code><span>描述符的文件</span></p></li><li><p><code>find /lib /usr -name &#39;libc*.so&#39; -exec ls -lh {} \;</code><span>：在</span><code>/lib</code><span>和</span><code>/usr</code><span>两个目录下查找名字满足</span><code>libc*.so</code><span>的文件执行</span><code>ls -lh 路径名</code><span>操作</span></p></li><li><p><code>find ~ -size +100k \( -name core -o -name &#39;*.tmp&#39; \) -ok rm {}\;</code><span>：执行删除操作之前需要用户确认</span></p></li><li><p><code>find src -name \*.c -exec grep -n -- --help {} /dev/null \;</code><span>：在目录</span><code>src</code><span>下查找所有</span><code>.c</code><span>文件中查找</span><code>--help</code><span>字符串。</span><code>-n</code><span>表示显示行号，</span><code>/dev/null</code><span>代表什么？？？？？？？？？？？</span></p></li></ul></li></ul><p>&nbsp;</p><h2 id='20-打包与压缩'><span>20 打包与压缩</span></h2><p><span>命令为：</span><code>tar ctxv[f devicel]] file-list</code><span>，选项第一字母指定要执行的操作，</span><code>c</code><span>表示创建新磁带，</span><code>t</code><span>表示磁带上的文件列表（若不存在则创建），</span><code>x</code><span>表示从磁带中抽取指定文件（不存在时抽取所有文件），其他选项：</span></p><ul><li><p><code>v</code><span>：每处理一个文件，就打印出文件名并在该名之前冠以功能字母</span></p></li><li><p><code>f</code><span>：指定设备文件名</span></p></li><li><p><code>z</code><span>：采用压缩格式（</span><code>gzip</code><span>算法）</span></p></li><li><p><code>j</code><span>：采用压缩格式（</span><code>bzip2</code><span>算法）</span></p></li></ul><p>&nbsp;</p><p><span>使用案例：</span></p><ul><li><p><code>tar cvf /dev/rct0 .</code><span>：将当前目录树备份到设备</span><code>/dev/rct0</code><span>中</span></p></li><li><p><code>tar tvf /dev/rct0</code><span>：查看磁带设备</span><code>/dev/rct0</code><span>上的文件目录</span></p></li><li><p><code>tar xvf /dev/rct0</code><span>：将磁带设备</span><code>/dev/rct0</code><span>上的文件恢复到文件系统中</span></p></li><li><p><code>tar cvf my.tar *.[ch] makefile</code><span>：指定普通文件代替设备文件，将多个文件或目录树存储成一个文件</span></p></li><li><p><code>tar cvf work.tar work</code><span>：压缩文件，其中</span><code>work</code><span>是一个有多个层次的子目录</span></p></li><li><p><code>tar cvzf work.tar.gz work</code><span>：</span><code>gzip</code><span>压缩格式</span></p></li><li><p><code>tar cvjf work.tar.bz2 work</code><span>：</span><code>bzip2</code><span>压缩格式</span></p></li><li><p><code>tar xvf work.tar.gz</code><span>：查看归档文件中的文件目录</span></p></li><li><p><code>tar xvf work.gz</code><span>：从归档文件中恢复目录树</span></p></li></ul><p>&nbsp;</p><h2 id='21-命令获取信息'><span>21 命令获取信息</span></h2><p><span>在Linux系统命令和用户程序（ap）运行过程中，有下面几种方式获得信息：</span></p><ul><li><p><span>配置文件：系统级偏好设置和用户级偏好设置，例如</span><code>/etc/profile</code><span>和</span><code>~/.bash_profile</code><span>等</span></p></li><li><p><span>环境变量：命令</span><code>env</code><span>可以打印出当前的环境变量，C语言可以通过库</span><code>getenv()</code><span>获取环境变量</span></p></li><li><p><span>命令行参数：程序启动之前通过命令行参数输入参数</span></p></li><li><p><span>交互式键盘输入（在linux中较少使用）：程序运行过程中（暂停）由操作员输入</span></p></li></ul><p>&nbsp;</p><p><span>命令行参数的三种风格：</span></p><ul><li><p><span>类似</span><code>dd</code><span>命令的风格，采用</span><code>param=value</code><span>格式</span></p></li><li><p><span>类似</span><code>find</code><span>和</span><code>gcc</code><span>命令的风格，以减号打头的一个由多个字符构成的单词用作选项</span></p></li><li><p><span>类似</span><code>ls</code><span>和</span><code>grep</code><span>命令的风格（如今流行的格式），长选项与短选项交叉，并以</span><code>--</code><span>标识选项的结束</span></p></li></ul><p>&nbsp;</p><h2 id='22-文件系统'><span>22 文件系统</span></h2><p><span>文件系统的三个主要概念：</span></p><ul><li><p><span>根文件系统</span></p></li><li><p><span>子文件系统</span></p></li><li><p><span>独立的存储系统</span></p></li></ul><p>&nbsp;</p><p><span>常见命令：</span></p><ul><li><p><code>mkfs /dev/sdb</code><span>：新建文件系统</span></p></li><li><p><code>mount /dev/sdb /mnt</code><span>：安装子文件系统</span></p></li><li><p><code>mount</code><span>（不带参数）：列出当前已安装好的所有子文件系统</span></p></li><li><p><code>umount /dev/sdb</code><span>：卸载一个文件系统</span></p></li><li><p><code>df</code><span>：显示文件系统的空闲空间（</span><code>-h</code><span>选项可选）</span></p></li></ul><p>&nbsp;</p><p><span>文件系统的结构：</span></p><ul><li><p><span>整个逻辑设备以块（扇区）为单位进行划分，编号从0开始，每块大小都是512字节（也有可能更大），其中：</span></p><ul><li><p><span>0号块：引导块，用于启动系统，只有根文件系统的引导块有效</span></p></li><li><p><span>1号块：也叫管理块，或则超级块，用于存放文件系统的管理信息，如文件系统的大小、</span><code>i</code><span>节点区的大小、空闲空间的大小、空闲块链表头等信息。执行</span><code>mkfs</code><span>命令进行初始化时，</span><code>df</code><span>命令读出部分信息</span></p></li></ul></li><li><p><code>i</code><span>节点区：由若干块构成，在</span><code>mkfs</code><span>命令创建文件系统时确定，每块可以容纳若干个</span><code>i</code><span>节点，每个</span><code>i</code><span>节点的大小是固定的（例如64字节）。</span><code>i</code><span>节点从0开始编号，根据编号可以索引到磁盘跨块。每个文件都对应一个</span><code>i</code><span>节点，</span><code>i</code><span>节点中的信息包括：</span></p><ul><li><p><span>指向文件存储区数据块的一些索引指针</span></p></li><li><p><span>文件属性，属主、组、权限、link数、大小、时间戳等</span></p></li></ul></li><li><p><span>文件存储区：用于存放文件数据的区域，包括目录表</span></p></li><li><p><span>目录表：linux系统允许带有交叉勾连的目录结构，每个目录表也作为一个文件来进行管理，每个目录表由若干个目录项构成，目录项只含两部分信息：文件名，</span><code>i</code><span>节点号。用</span><code>ls</code><span>命令列出的目录大小是目录表文件本身的长度。目录表和</span><code>i</code><span>节点的两级结构的目的主要是为了提高目录索引的检索效率。可以通过</span><code>stat</code><span>命令来读取</span><code>i</code><span>节点的信息</span></p></li></ul><p>&nbsp;</p><h2 id='23-硬链接与符号链接'><span>23 硬链接与符号链接</span></h2><p><span>硬链接数目就是link数。根据文件目录的存储结构，可以在同一目录或者不同目录中的两个目录项有相同的</span><code>i</code><span>节点号，每个目录项指定的</span><code>文件名-i节点号</code><span>映射关系，叫做1个硬链接，link数就是同一</span><code>i</code><span>节点被目录项引用的次数。</span></p><p>&nbsp;</p><p><code>ln chapt0 intro</code><span>：创建源文件为</span><code>chapt0</code><span>的硬链接文件</span><code>intro</code><span>，这时如果使用</span><code>ls -l chapt0 intro</code><span>命令列出两个文件的相关信息，则前面几项必定相同（因为来自同一个</span><code>i</code><span>节点文件），此时删除其中一个文件只会导致link数减一，不会删除文件（此时</span><code>chapt0</code><span>文件和</span><code>intro</code><span>文件的地位完全相同）（硬链接仅限于同一文件系统中的普通文件）。</span></p><p>&nbsp;</p><p><span>不允许对目录建立硬链接文件，目录文件的link数一般为直属子目录数+2。</span></p><p>&nbsp;</p><p><span>符号链接通过符号链接文件实现，该文件内容仅包括一个路径名。建立符号链接文件之后，删除操作删除的是符号链接文件，而其他所有操作都是直接访问真正的文件。符号链接中：</span></p><ul><li><p><span>相对路径：是相对于符号链接文件的位置</span></p></li><li><p><span>绝对路径：引用绝对路径名，移动符号链接文件之后不会失效</span></p></li></ul><p>&nbsp;</p><p><span>硬链接与符号链接文件的比较：</span></p><ul><li><p><span>硬链接仅在数据结构层次上实现，并且只适用于文件，不适用于目录，不同文件系统之间也不行</span></p></li><li><p><span>符号链接在算法软件层面实现，硬链接能完成的功能都可以通过符号链接来实现，适用于目录、也适用于不同的文件系统，同硬链接相比要占用操作系统内核的一部分开销</span></p></li></ul><p>&nbsp;</p><h2 id='24-系统调用'><span>24 系统调用</span></h2><p><span>系统调用以C语言函数调用的方式提供，系统调用是应用程序（ap）给操作系统（kernel）进行交互的唯一手段，例如文件的</span><code>open</code><span>、</span><code>write</code><span>、</span><code>read</code><span>、</span><code>close</code><span>等操作。系统调用特点如下：</span></p><ul><li><p><span>系统调用以中断方式进行，与函数执行过程不同</span></p></li><li><p><span>可以通过库函数方式对系统调用进行封装，例如</span><code>printf</code><span>是对</span><code>write</code><span>的封装</span></p></li><li><p><span>系统调用和相关的api函数以及库函数的名称是posix标准的一部分，便于在不同的unix系统之间进行迁移</span></p></li></ul><p>&nbsp;</p><p><span>系统调用的返回值：</span></p><ul><li><p><span>大于等于0：成功</span></p></li><li><p><span>等于-1：失败</span></p></li><li><p><span>整型变量</span><code>errno</code><span>为失败原因记录，是个整数，用于标识错误原因，库函数</span><code>strerrno</code><span>可以将数字形式的错误代码转换成一个可以阅读的字符串</span></p></li><li><p><code>printf</code><span>函数中的</span><code>%m</code><span>会被替换成上一次系统调用失败的错误代码对应的消息</span></p></li></ul><p>&nbsp;</p><h2 id='25-访问i节点和目录'><span>25 访问i节点和目录</span></h2><p><span>命令</span><code>stat</code><span>或</span><code>fstat</code><span>可以从</span><code>i</code><span>节点获取文件的状态信息：</span></p><ul><li><p><code>stat</code><span>得到指定路径名文件的</span><code>i</code><span>节点</span></p></li><li><p><code>fstat</code><span>得到已打开的文件的</span><code>i</code><span>节点</span></p></li><li><p><span>这两条命令将数据放入调用者提供的</span><code>stat</code><span>结构体中，</span><code>stat</code><span>结构体中包含很多信息，详见ppt</span></p></li></ul><p>&nbsp;</p><p><span>注意</span><code>i</code><span>节点结构体</span><code>stat</code><span>结构体中有关时间信息的三个属性：</span></p><ul><li><p><code>a访问</code><span>：读、执行等操作（有些系统为了懒惰处理，不更新，但不早于</span><code>m</code><span>时间）</span></p></li><li><p><code>m修改</code><span>：文件内容修改，例如写文件</span></p></li><li><p><code>c改变</code><span>：</span><code>i</code><span>节点信息变化，例如写文件、修改权限/link数/文件主等</span></p></li></ul><p>&nbsp;</p><p><span>构造自己的目录访问工具是可能的。</span></p><p>&nbsp;</p><h2 id='26-文件与目录的权限'><span>26 文件与目录的权限</span></h2><p><span>权限的三个级别：文件主（有且仅有一个）、同组用户、其他用户。</span></p><p>&nbsp;</p><p><span>普通文件的权限：读、写、可执行。不可写文件也可能被删除。</span></p><p>&nbsp;</p><p><span>两类可执行文件：</span></p><ul><li><p><span>程序文件：二进制文件，为二进制的CPU指令集合，满足操作系统格式才能被加载执行</span></p></li><li><p><span>脚本文件：文本文件，需要指定解释程序（例如</span><code>/bin/bash</code><span>）</span></p></li></ul><p>&nbsp;</p><p><span>目录的权限主要包括：</span></p><ul><li><p><span>读权限：若无读权限，那么“目录表”不允许读，例如</span><code>ls</code><span>的命令的执行会失败</span></p></li><li><p><span>写权限：若无写权限，则创建新文件/删除已有文件的操作会失败（因为会改变目录表内容）。修改文件本身不需要修改目录表内容，因此是可行的</span></p></li><li><p><span>执行权限（</span><code>x</code><span>权限）：有执行权限意味着分析路径名过程中可以检索该目录，例如</span><code>cat /a/b/c</code><span>（</span><code>c</code><span>为文件）要求当前用户对</span><code>a</code><span>和</span><code>b</code><span>目录有</span><code>x</code><span>权限，对</span><code>c</code><span>文件有读权限</span></p></li><li><p><code>STICKY</code><span>权限：早期unix中，具有该权限的可执行文件尽量常驻内存或交换区以提高效率。现代unix中该属性被忽略。如果目录具有该属性，？？？？？？？？？？？</span></p></li></ul><p>&nbsp;</p><p><span>关于权限的常见命令：</span></p><ul><li><p><code>ls -l</code><span>列出当前目录下所有文件和子目录的权限</span></p></li><li><p><code>chmod</code><span>可用于修改权限，有两种形式：</span></p><ul><li><p><span>字母形式：</span><code>chmod [ugoa][+-=][rwxst] 文件名列表</code><span>：</span><code>u</code><span>表示文件主权限、</span><code>g</code><span>表示同组用户权限、</span><code>o</code><span>表示其他用户权限、</span><code>a</code><span>表示上述所有人的权限</span></p></li><li><p><span>数字形式：</span><code>chmod xxx 文件名列表</code><span>：</span><code>xxx</code><span>为三个八进制数字</span></p></li></ul></li><li><p><code>umask</code><span>命令：控制文件和目录在创建时的初始权限，注意</span><code>umask</code><span>是进程属性的一部分。</span><code>umask 022</code><span>将</span><code>umask</code><span>值设为八进制的</span><code>022</code><span>，对应二进制为</span><code>000 010 010</code><span>，这时创建新文件将会取消新文件的同组用户</span><code>w</code><span>权限和其他用户的</span><code>w</code><span>权限</span></p></li></ul><p>&nbsp;</p><p><span>当前的三级权限体系有不足之处，主要体现在：系统中的一个用户，要么对文件的全部内容具有访问权限、要么完全不能访问该文件，这种缺点在修改密码等敏感信息时缺陷很大。为了解决该问题，有下面的思路：</span></p><ul><li><p><span>用户liu有</span><code>list.txt</code><span>文件</span></p></li><li><p><span>用户liu希望用户liang只能读取行首为liang的数据</span></p></li><li><p><span>用户liu编写程序</span><code>query.c</code><span>实现对</span><code>list.txt</code><span>文件的遍历，并比较给定的名字与行首是否符合，若符合则输出信息</span></p></li><li><p><span>用户liu将</span><code>list.txt</code><span>文件权限设为</span><code>-rw-------</code><span>，将</span><code>query.c</code><span>文件编译后的文件</span><code>query</code><span>权限设为</span><code>-rw---x--x</code></p></li><li><p><span>用户liang在试图执行</span><code>query</code><span>可执行文件的时候，会发现无法访问</span><code>list.txt</code><span>文件导致执行失败，无法进行查询</span></p></li><li><p><span>用户liu给</span><code>query</code><span>可执行文件增加</span><code>s</code><span>权限，此时</span><code>query</code><span>文件权限为</span><code>-rws--x--x</code></p></li><li><p><span>这时，用户liang再次执行</span><code>query</code><span>文件的时候，便可以访问到</span><code>list.txt</code><span>文件了，可以进行查询操作了！</span></p></li></ul><p><span>原理解释：一般情况下，进程的UID和有效UID相同，通过</span><code>open</code><span>打开文件的时候，系统会根据进程的有效UID与文件所有者UID进行比较并进行合法性验证。如果可执行文件具有SUID权限，那么在执行这个可执行文件的时候，进程的实际UID是当前用户，而进程的有效UID则变成了可执行文件的文件主！</span></p><p>&nbsp;</p><h2 id='27-shell基础知识'><span>27 shell基础知识</span></h2><p><span>shell的主要用途是批处理，其执行效率比算法语言低。shell是面向命令处理的语言，提供的流程控制结构通过对一些内部命令的解释实现。shell提供了灵活的机制（策略与机制相分离），shell许多灵活的功能，通过shell替换来实现（例如流程控制所需的条件判断、四则运算，都由shell之外的命令完成）。</span></p><p>&nbsp;</p><p><span>有三种方法启动交互式bash：</span></p><ul><li><p><span>注册shell</span></p></li><li><p><span>键入bash命令</span></p></li><li><p><span>脚本解释器</span></p></li></ul><p>&nbsp;</p><p><span>自动执行的一批命令（用户偏好）：当bash作为注册shell被启动时，自动执行用户主目录下的</span><code>.bash_profile</code><span>文件中的命令（在</span><code>~</code><span>文件夹或</span><code>$HOME</code><span>文件夹下）；当bash作为注册shell退出时，自动执行</span><code>$.bash_logout</code><span>文件。类似</span><code>umask</code><span>之类的命令，应该写在</span><code>.profile</code><span>文件中。</span></p><p>&nbsp;</p><p><span>自动执行的一批命令（系统级）：当bash作为注册bash被启动时，自动执行</span><code>/etc/profile</code><span>文件中命令；当bash作为交互式shell启动时，自动执行</span><code>/etc/bash.bashrc</code><span>；当bash作为注册shell退出时，自动执行</span><code>/etc/bash.bash.logout</code><span>。</span></p><p>&nbsp;</p><p><span>脚本文件的执行可以通过新创建子进程来实现，几种命令如下：</span></p><ul><li><p><code>bash&lt;lsdir</code><span>：这种格式无法携带命令参数</span></p></li><li><p><code>bash -x lsidr</code><span>：可以携带命令参数</span></p></li><li><p><code>bash lsdir /usr/lib/gcc</code><span>：可以携带命令参数</span></p></li></ul><p><span>这三种方法均启动程序</span><code>/bin/bash</code><span>并生成新进程。</span></p><p>&nbsp;</p><p><span>如果想在当前shell进程中执行脚本：</span><code>. lsidr /usr/lib/gcc</code><span>或者</span><code>source lsdir /usr/lib/gcc</code><span>。</span></p><p>&nbsp;</p><p><span>shell支持查看历史表，通过内部命令</span><code>history</code><span>（文件</span><code>$HOME/.bash_history</code><span>）来查看历史表，常用机制：</span></p><ul><li><p><span>人机交互时可以使用上下箭头</span></p></li><li><p><code>!!</code><span>引用上一命令，</span><code>!str</code><span>引用以</span><code>str</code><span>开头的最近使用过的命令</span></p></li></ul><p>&nbsp;</p><p><span>可以给现有命令起别名，例如（如有需要，应把</span><code>alias</code><span>命令放入</span><code>./bashrc</code><span>文件）：</span></p><ul><li><p><code>alias dir=&quot;ls -flad&quot;</code></p></li><li><p><code>alias n=&quot;netstat -p tcp -s | head -10&quot;</code></p></li></ul><p><span>可以通过</span><code>alias</code><span>命令查看别名表，并且可以使用内部命令</span><code>unalias</code><span>命令取消别名（例如</span><code>unalias n</code><span>便是取消上面关于</span><code>n</code><span>的别名）。</span></p><p>&nbsp;</p><p><span>可以使用TAB键补全。</span></p><p>&nbsp;</p><p><span>常见的输入重定向：</span></p><ul><li><p><code>&lt;filename</code><span>：从文件</span><code>filename</code><span>中获取</span><code>stdin (fd=0)</code><span>，例如</span><code>sort &lt; telno.txt</code></p></li><li><p><code>&lt;&lt;word</code><span>：从shell脚本文件获取数据直到再次遇到定界符</span><code>word</code><span>，例如：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3385px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">cat</span> &lt;&lt; TOAST</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">* NOW : <span class="cm-quote">`date`</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">* My Home DIrectory is <span class="cm-def">$HOME</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">TOAST</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># 定界符做界定内容的加工处理(等同双引号处理):</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># 变量替换 命令替换</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># 不执行文件名生成</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 173px;"></div><div class="CodeMirror-gutters" style="display: none; height: 173px;"></div></div></div></pre></li><li><p><code>&lt;&lt;&lt;word</code><span>：从命令行获取信息作为标准输入，例如</span><code>base64 &lt;&lt;&lt; beiyou</code><span>以及</span><code>base64 &lt;&lt;&lt; &#39;bei you&#39;</code></p></li></ul><p>&nbsp;</p><p><span>程序的输出一般包括：</span></p><ul><li><p><span>标准输出：</span><code>stdout</code><span>，</span><code>fd=1</code></p></li><li><p><span>标准错误输出：</span><code>stderr</code><span>，</span><code>fd=2</code></p></li></ul><p><span>其中</span><code>stdout</code><span>重定向的常见方式包括：</span></p><ul><li><p><code>&gt;filename</code><span>：重定向到文件，若文件存在则先清空（覆盖方式）</span></p></li><li><p><code>&gt;&gt;filename</code><span>：将</span><code>stdout</code><span>追加到文件尾</span></p></li></ul><p><span>而</span><code>stderr</code><span>重定向的常见方式包括：</span></p><ul><li><p><code>2&gt;filename</code><span>：重定向到文件，可以据此分离</span><code>stdout</code><span>和</span><code>strerr</code><span>的重定向</span></p></li><li><p><code>2&gt;&amp;1</code><span>：将文件句柄</span><code>2</code><span>（</span><code>fd=2</code><span>）重定向到文件描述符</span><code>1</code><span>指向的文件</span></p></li></ul><p><span>除此之外，还允许对其他文件句柄输入或输出进行重定向，例如：</span></p><ul><li><p><code>./mpap</code></p></li><li><p><code>5 &lt; a.txt</code></p></li><li><p><code>6 &gt; b.dat</code></p></li></ul><p><span>同时重定向</span><code>stdout</code><span>和</span><code>stderr</code><span>例如：</span><code>./stda 1&gt;try.out 2&gt;$1</code><span>（</span><code>1</code><span>可选，注意顺序）</span></p><p>&nbsp;</p><p><span>管道是指迁移命令的输出作为下一命令的输入，例如：</span></p><ul><li><p><code>ls -l | grep &#39;^d&#39;</code></p></li><li><p><code>cc try.c -o try 2&gt;$1 | more</code></p></li></ul><p><span>管道实际上可以认为将</span><code>stdout</code><span>和</span><code>stderr</code><span>都重定向到了一个PIPE文件中？？？</span></p><p>&nbsp;</p><h2 id='28-变量的赋值及使用'><span>28 变量的赋值及使用</span></h2><p><span>bash可以存储变量，存储的内容是字符串（注意：对于数字串来说，存储的是字符串而不是表示数值的二进制串），并且变量名必须遵守：</span></p><ul><li><p><span>第一个字符必须是字母</span></p></li><li><p><span>其余字符可以是字母、数字、下划线</span></p></li></ul><p>&nbsp;</p><p><span>变量的赋值注意等号两侧不能有空格，并且如果有空格需要用双引号；变量的引用需要在前面冠以</span><code>$</code><span>符号，并且引用未定义变量则变量值位空字符串。</span></p><p>&nbsp;</p><p><span>与这部分相关的shell内部开关包括：</span></p><ul><li><p><code>set -u</code><span>：当引用一个未定义的变量时，产生一个错误</span></p></li><li><p><code>set +u</code><span>：当引用一个未定义的变量时，认为是一个空串（默认情况）</span></p></li><li><p><code>set -x</code><span>：执行命令前打印出shell替换后的命令及参数，为区别于正常的shell输出，前面冠以</span><code>+</code><span>符号</span></p></li><li><p><code>set +x</code><span>：取消上述设置</span></p></li></ul><p>&nbsp;</p><p><span>对于</span><code>echo</code><span>命令，注意以下两个案例的区别：</span></p><ul><li><p><code>echo beijing china</code></p></li><li><p><code>echo &quot;beijing china&quot;</code></p></li></ul><p>&nbsp;</p><p><span>内部命令</span><code>read</code><span>是变量取值的另外一种方法，从标准输入输入一行内容赋值给变量。例如：读取用户的输入，并使用输入的信息：先输入</span><code>read name</code><span>，然后在命令行（</span><code>stdin</code><span>）上键入内容即。</span></p><p>&nbsp;</p><h2 id='29-环境变量'><span>29 环境变量</span></h2><p><span>创建的shell变量都默认为全局变量（即只在当前shell中可以访问到），可以通过内部命令</span><code>export</code><span>将局部变量转换为环境变量，例如</span><code>export proto</code><span>，这条命令的意义在于：shell启动的子进程只能继承环境变量，而不继承局部变量（当然，此后子进程对环境变量的修改，不影响父进程中同名变量）。</span></p><p>&nbsp;</p><p><span>登录系统后系统自动创建一些环境变量影响应用程序的运行，例如：</span></p><ul><li><p><code>HOME</code><span>：用户主目录的路径名</span></p></li><li><p><code>PATH</code><span>：命令查找路径</span></p></li><li><p><code>TERM</code><span>：终端类型</span></p></li></ul><p>&nbsp;</p><p><span>相关命令包括：</span></p><ul><li><p><code>set</code><span>：列出当前所有变量及其值以及函数定义（包括环境变量就局部变量、函数定义），例如</span><code>set | grep ^fname=</code></p></li><li><p><span>外部命令</span><code>/bin/env</code><span>：列出环境变量及其值</span></p></li></ul><p>&nbsp;</p><p><span>环境变量可以供shell脚本和C程序的引用，例如：</span></p><ul><li><p><code>cat Connect to $proto Networks</code></p></li><li><p><code>cat report.c</code><span>（</span><code>report.c</code><span>文件中通过命令</span><code>char *proto = getenv(&quot;proto&quot;);</code><span>实现对环境变量</span><code>proto</code><span>的引用）</span></p></li></ul><p>&nbsp;</p><p><span>下面的案例演示了环境变量的使用（来自互联网）：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell" style="break-inside: unset;"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3385px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[net]<span class="cm-def">$ a</span><span class="cm-operator">=</span><span class="cm-number">22</span> &nbsp; &nbsp; &nbsp; <span class="cm-comment">#定义一个全局变量</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[net]<span class="cm-def">$ echo</span> <span class="cm-def">$a</span> &nbsp; &nbsp;<span class="cm-comment">#在当前Shell中输出a，成功</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-number">22</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[net]<span class="cm-def">$ bash</span> &nbsp; &nbsp; &nbsp; <span class="cm-comment">#进入Shell子进程</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[net]<span class="cm-def">$ echo</span> <span class="cm-def">$a</span> &nbsp; &nbsp;<span class="cm-comment">#在子进程中输出a，失败</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[net]<span class="cm-def">$ exit</span> &nbsp; &nbsp; &nbsp; <span class="cm-comment">#退出Shell子进程，返回上一级Shell</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">exit</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[net]<span class="cm-def">$ export</span> a &nbsp; <span class="cm-comment">#将a导出为环境变量</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[net]<span class="cm-def">$ bash</span> &nbsp; &nbsp; &nbsp; <span class="cm-comment">#重新进入Shell子进程</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[net]<span class="cm-def">$ echo</span> <span class="cm-def">$a</span> &nbsp; &nbsp;<span class="cm-comment">#在子进程中再次输出a，成功</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-number">22</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[net]<span class="cm-def">$ exit</span> &nbsp; &nbsp; &nbsp; <span class="cm-comment">#退出Shell子进程</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">exit</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[net]<span class="cm-def">$ exit</span> &nbsp; &nbsp; &nbsp; <span class="cm-comment">#退出父进程，结束整个Shell会话</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># export a 这种形式是在定义变量 a 以后再将它导出为环境变量</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># 如果想在定义的同时导出为环境变量，可以写作export a=22</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 444px;"></div><div class="CodeMirror-gutters" style="display: none; height: 444px;"></div></div></div></pre><p>&nbsp;</p><h2 id='30-shell的替换'><span>30 shell的替换</span></h2><p><span>shell一定是先进行替换工作、再执行命令，包括：</span></p><ul><li><p><span>文件名生成：遵循文件通配符规则，按照字典序排列，例如</span><code>ls *.c</code><span>实际执行</span><code>ls a.c x.c</code><span>；如果没有匹配的文件则不展开，即仍然是</span><code>ls *.c</code></p></li><li><p><span>变量替换：例如</span><code>ls $HOME</code><span>以及</span><code>echo &quot;My home is $HOME, Terminal is $TERM&quot;</code></p></li><li><p><span>命令替换：反撇号内的命令先执行</span></p></li><li><p><code>$()</code><span>格式的替换：其中的</span><code>stdout</code><span>替换这部分内容，例如</span><code>./arg $(date)</code><span>实际上执行</span><code>./arg Sun Dec 4 14:54:38 Beijing 2018</code></p></li></ul><p>&nbsp;</p><p><span>shell常见内部变量包括：</span></p><ul><li><p><code>$0</code><span>：脚本文件本身的名字</span></p></li><li><p><code>$1</code><span>和</span><code>$2</code><span>等：1号命令行参数、2号命令行参数，等</span></p></li><li><p><code>$#</code><span>：命令行参数的个数</span></p></li><li><p><code>&quot;$*&quot;</code><span>：等同于</span><code>&quot;$1 $2 $3 $4 ...&quot;</code></p></li><li><p><code>&quot;$@&quot;</code><span>：等同于</span><code>&quot;$1&quot; &quot;$2&quot; &quot;$3&quot; &quot;$4&quot; ...</code></p></li></ul><p>&nbsp;</p><p><span>shell命令</span><code>shift</code><span>用于位置参数的移位操作，支持形如</span><code>shift 3</code><span>这种形式的命令，具体含义详见ppt。</span></p><p>&nbsp;</p><h2 id='31-shell的元字符'><span>31 shell的元字符</span></h2><p><span>shell的元字符包括：</span></p><ul><li><p><span>空格，制表符：命令行参数的分隔符</span></p></li><li><p><span>回车：执行键入的命令</span></p></li><li><p><code>&gt;</code><span>、</span><code>&lt;</code><span>、</span><code>|</code><span>：重定向与管道（还有</span><code>||</code><span>）</span></p></li><li><p><code>;</code><span>：用于一行内输入多个命令（还有</span><code>;;</code><span>）</span></p></li><li><p><code>&amp;</code><span>：后台运行（还有</span><code>&amp;&amp;</code><span>）</span></p></li><li><p><code>$</code><span>：引用shell变量</span></p></li><li><p><span>反撇号：用于命令替换</span></p></li><li><p><code>*</code><span>、</span><code>[]</code><span>、</span><code>?</code><span>：文件通配符（</span><code>echo &quot;*&quot;</code><span>与</span><code>echo *</code><span>不同，前者？？？后者？？？）</span></p></li><li><p><code>\</code><span>：取消后继字符的特殊含义（转义）</span></p></li><li><p><code>()</code><span>：用于定义shell函数或在子shell中执行一组命令</span></p></li></ul><p>&nbsp;</p><p><span>重要知识：</span></p><ul><li><p><code>\</code><span>用作转义，取消其后元字符的特殊作用（如果</span><code>\</code><span>加在非元字符后，那么就和没有一样）</span></p><ul><li><p><span>例如：</span><code>echo Windows Dir is C:\\Windows\\WORK.DIR</code></p></li></ul></li><li><p><span>单引号对其中任何字符不作任何特殊解释，全盘输出（直到再次遇到单引号）</span></p></li><li><p><span>双引号中只进行变量替换（</span><code>$</code><span>决定）和命令替换（反撇号决定）</span></p><ul><li><p><span>例如：</span><code>echo &quot;My home dir is $HOME&quot;</code></p></li></ul></li><li><p><span>重要案例：</span></p><ul><li><p><code>echo &#39;Don&#39;\&#39;&#39;t remove Peter&#39;\&#39;&#39;s Windows dir &quot;C:\PETER&quot;!&#39;</code></p></li><li><p><code>echo &quot;反撇号whoami反撇号&#39;s \$HOME is \&quot;$HOME\&quot;&quot;</code></p></li><li><p><code>year=反撇号expr \反撇号date &#39;+%Y&#39;\反撇号 - 10反撇号</code><span>（这条命令是多级嵌套的典例）</span></p><ul><li><p><span>先执行反撇号中的内容，为</span><code>expr 反撇号date &#39;+%Y&#39;反撇号 - 10</code></p></li><li><p><span>再执行这其中反撇号中的内容，为</span><code>date &#39;+%Y&#39;</code></p></li><li><p><span>得到当前年份为</span><code>2023</code></p></li><li><p><span>带入</span><code>expr 反撇号date &#39;+%Y&#39;反撇号 - 10</code><span>得到</span><code>expr 2023 - 10</code></p></li><li><p><span>得到十年前年份为</span><code>2013</code></p></li><li><p><span>带入</span><code>year=反撇号expr \反撇号date &#39;+%Y&#39;\反撇号 - 10反撇号</code><span>得到</span><code>year=2013</code></p></li></ul></li><li><p><span>下面三者在实现效果上是一样的（在</span><code>*.conf</code><span>文件中找行尾是被单引号括起来的IP地址</span><code>192.168.x.x</code><span>的行，</span><code>grep</code><span>得到的第一个参数字符串应该为正则表达式</span><code>&#39;192\.168\.[0-9]*&#39;$</code><span>）：</span></p><ul><li><p><code>grep \&#39;&#39;192\.168\.[0-9]*&#39;\&#39;&#39;$&#39; *.conf</code></p></li><li><p><code>grep &quot;&#39;192\\.168\\.[0-9]*&#39;\$&quot; *.conf</code></p></li><li><p><code>grep \&#39;192\\.168\\.\[0-9.]\*\&#39;\$ *.conf</code></p></li></ul></li><li><p><span>给出程序名字，中止系统中正在运行的进程：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.1694px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">PIDS</span><span class="cm-operator">=</span><span class="cm-quote">`ps -e | awk '/[0-9]:[0-9][0-9]'</span><span class="cm-def">$1</span><span class="cm-quote">'</span><span class="cm-def">$/</span><span class="cm-quote"> {printf("%d ", </span><span class="cm-def">$1</span><span class="cm-quote">);}'`</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">echo</span> <span class="cm-def">$PIDS</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">kill</span> <span class="cm-def">$PIDS</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># 或者</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">kill</span> <span class="cm-quote">`ps -e | awk '/[0-9]:[0-9][0-9]'</span><span class="cm-def">$1</span><span class="cm-quote">'</span><span class="cm-def">$/</span><span class="cm-quote"> {printf("%d ", </span><span class="cm-def">$1</span><span class="cm-quote">);}'`</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 173px;"></div><div class="CodeMirror-gutters" style="display: none; height: 173px;"></div></div></div></pre></li><li><p><span>上面是否丢了一个空格？应当求证！！！</span></p></li></ul></li></ul><p>&nbsp;</p><h2 id='32-shell编程'><span>32 shell编程</span></h2><p><span>shell中的逻辑判断基本内容如下：</span></p><ul><li><p><span>每条命令执行结束之后有返回码，可以根据返回码判断命令是否执行成功（如</span><code>main</code><span>函数的</span><code>return 0</code><span>）</span></p></li><li><p><span>shell内部命令</span><code>$?</code><span>表示上衣命令的返回码（用管道连接在一起的若干命令，进行条件判断时以最后一个命令执行的返回码为准）</span></p></li><li><p><span>可以用</span><code>&amp;&amp;</code><span>或</span><code>||</code><span>连结两个命令，注意短路计算原则</span></p></li><li><p><span>命令</span><code>true</code><span>（在</span><code>/bin/true</code><span>中）返回码总为</span><code>0</code><span>（同理有</span><code>false</code><span>命令）</span></p></li></ul><p>&nbsp;</p><p><code>test</code><span>命令常用在shell条件判断中，有许多种用法：</span></p><ul><li><p><span>文件特性检测，例如</span><code>test -r /etc/motd &amp;&amp; echo readable</code><span>检测可读文件，其他选项有：普通文件</span><code>-f</code><span>、目录文件</span><code>-d</code><span>、可写文件</span><code>-w</code><span>、可执行文件</span><code>-x</code><span>、非空文件</span><code>-s</code><span>（为真条件是文件</span><code>size &gt; 0</code><span>）</span></p></li><li><p><span>整数的比较，例如</span><code>test 反撇号ls | wc -l反撇号 -ge 100 &amp;&amp; echo &quot;Two many files&quot;</code><span>，选项有：</span><code>-eq</code><span>、</span><code>-ne</code><span>、</span><code>-gt</code><span>、</span><code>-ge</code><span>、</span><code>-lt</code><span>、</span><code>-le</code><span>共六个</span></p></li></ul><p>&nbsp;</p><p><code>[</code><span>命令也常用在shell条件判断中（要求最后一个参数必须是</span><code>]</code><span>，例如：</span></p><ul><li><p><span>字符串比较，例如</span><code>[ &quot;$a&quot; = &quot;&quot; ] &amp;&amp; echo empty string</code><span>（注意中括号两侧的空格不能少，否则</span><code>[</code><span>命令的参数检测不到）。检测不等号用</span><code>!=</code></p></li><li><p><span>复合逻辑条件，选项包括：非</span><code>!</code><span>、或</span><code>-o</code><span>、与</span><code>-a</code><span>，用法例如：</span><code>[ ! -d $cmd -a -x $cmd ] &amp;&amp; $cmd</code><span>，检测</span><code>$cmd</code><span>不是目录文件并且可以执行，则执行</span></p></li></ul><p>&nbsp;</p><p><span>在shell中，常见的命令组合方法如下所示：</span></p><ul><li><p><code>{}</code><span>方式：在当前shell中执行一组命令</span></p></li><li><p><code>()</code><span>方式：在子shell中执行一组命令</span></p></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell" style="break-inside: unset;"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3385px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># {}方式</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">pwd</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">DIR</span><span class="cm-operator">=</span>/usr/bin</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[ <span class="cm-attribute">-d</span> <span class="cm-def">$DIR</span> ] &amp;&amp; {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-builtin">cd</span> <span class="cm-def">$DIR</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-builtin">echo</span> <span class="cm-string">"Current Directory is `pwd`"</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-builtin">echo</span> <span class="cm-string">"`ls | wc -l `files"</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">pwd</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># ()方式</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">pwd</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">DIR</span><span class="cm-operator">=</span>/usr/bin</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[ <span class="cm-attribute">-d</span> <span class="cm-def">$DIR</span> ] <span class="cm-def">$$</span> (</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-builtin">cd</span> <span class="cm-def">$DIR</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-builtin">echo</span> <span class="cm-string">"Current Directory is `pwd`"</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-builtin">echo</span> <span class="cm-string">"`ls | wc -l `files"</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">pwd</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 469px;"></div><div class="CodeMirror-gutters" style="display: none; height: 469px;"></div></div></div></pre><p><span>注意这两种方式执行之区别：</span><code>{}</code><span>方式在当前shell中执行一组命令，那么当前shell的目录将会被切换，两个</span><code>pwd</code><span>显示的当前路径不同；而</span><code>()</code><span>中两次</span><code>pwd</code><span>命令显示的当前路径相同。除此之外，把多行合并为一行的时候，</span><code>{}</code><span>方式和</span><code>()</code><span>方式语法不同：</span></p><ul><li><p><code>{}</code><span>方式：</span><code>[ -f core ] &amp;&amp; { echo &quot;rm core&quot;;rm core;}</code><span>（圆括号是shell元字符，而左花括号不是--必须作为一个特殊内部命令处理，所以必须有空格）</span></p></li><li><p><code>()</code><span>方式：</span><code>[ -f core] &amp;&amp; (echo &quot;rm core&quot;;rm core)</code></p></li></ul><p>&nbsp;</p><p><span>在shell编程中，条件分支</span><code>if</code><span>基本语法如下：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3385px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">if</span> condition</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-keyword">then</span> list</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">elif</span> confition</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-keyword">then</span> list</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">else</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span>list</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">fi</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># 其中if/then/elif/else/fi为关键字(内部命令)</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 197px;"></div><div class="CodeMirror-gutters" style="display: none; height: 197px;"></div></div></div></pre><p>&nbsp;</p><p><span>多条件分支</span><code>case</code><span>基本语法如下：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3385px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">case word <span class="cm-keyword">in</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span>pattern) list1;;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span>pattern) list2;;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span>...</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">esac</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 123px;"></div><div class="CodeMirror-gutters" style="display: none; height: 123px;"></div></div></div></pre><p><span>注意：</span></p><ul><li><p><code>word</code><span>与</span><code>pattern</code><span>匹配使用shell的文件名匹配规则</span></p></li><li><p><code>;;</code><span>是一个整体，不可修改</span></p></li><li><p><span>可以使用竖线表示多个模式：</span><code>pattern1|pattern2) list;;</code></p></li><li><p><code>word</code><span>与多个</span><code>pattern</code><span>匹配时，执行遇到的第一个命令表</span></p></li></ul><p>&nbsp;</p><p><span>shell不支持除字符串以外的数据类型，也就是说不支持加减乘除等算术运算和关于字符串的正则表达式运算，这些功能通过</span><code>/usr/bin/expr</code><span>来实现，</span><code>expr</code><span>命令：</span></p><ul><li><p><span>支持算属于水暖、关系运算、逻辑运算和正则表达式运算，符号包括：</span></p><ul><li><p><code>()</code><span>、</span><code>+</code><span>、</span><code>-</code><span>、</span><code>*</code><span>、</span><code>/</code><span>、</span><code>%</code><span>、</span><code>&gt;</code><span>、</span><code>&gt;=</code><span>、</span><code>&lt;</code><span>、</span><code>&lt;=</code><span>、</span><code>=</code><span>（单等号！）、</span><code>!=</code><span>、或运算</span><code>|</code><span>、与运算</span><code>&amp;</code><span>、正则表达式运算</span><code>:</code></p></li></ul></li><li><p><span>注意空格的使用，例如：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3385px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">x</span><span class="cm-operator">=</span><span class="cm-quote">`expr </span><span class="cm-def">$a</span><span class="cm-quote"> '*' '(' </span><span class="cm-def">$b</span><span class="cm-quote"> + </span><span class="cm-def">$c</span><span class="cm-quote">')'`</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">y</span><span class="cm-operator">=</span><span class="cm-quote">`expr '(' </span><span class="cm-def">$a</span><span class="cm-quote"> + 4 '&lt;' </span><span class="cm-def">$b</span><span class="cm-quote"> ')' '&amp;' '(' </span><span class="cm-def">$c</span><span class="cm-quote"> != 8')'`</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 49px;"></div><div class="CodeMirror-gutters" style="display: none; height: 49px;"></div></div></div></pre></li><li><p><span>正则表达式运算</span><code>:</code><span>举例：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3385px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">expr <span class="cm-number">123</span> : <span class="cm-string">"[0-9]*"</span><span class="cm-tab" role="presentation" cm-text="	"> </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-comment"># 结果为3</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">expr A123 : <span class="cm-string">"[0-9]*"</span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-comment"># 结果为0</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">expr <span class="cm-string">"</span><span class="cm-def">$unit</span><span class="cm-string">"</span> : <span class="cm-string">".*"</span><span class="cm-tab" role="presentation" cm-text="	"> </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-comment"># 返回变量unit的长度</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" class="cm-tab-wrap-hack" style="padding-right: 0.1px;">expr <span class="cm-quote">`pwd`</span> : <span class="cm-string">".*/\([^/]*\)$"<span class="cm-tab" role="presentation" cm-text="	">    </span># 截取路径名的最后一个分量</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 123px;"></div><div class="CodeMirror-gutters" style="display: none; height: 123px;"></div></div></div></pre><p><span>一般来说是打印匹配长度（不匹配则为0），但如果和</span><code>\(</code><span>和</span><code>\)</code><span>使用则打印括号内能匹配的部分（否则为空字符串）</span></p></li></ul><p>&nbsp;</p><p><span>内部命令</span><code>eval</code><span>将程序中的输入或加工出来的数据作为程序来执行，包括解释和编译两个步骤，案例如下：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3385px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">a</span><span class="cm-operator">=</span><span class="cm-number">100</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">b</span><span class="cm-operator">=</span><span class="cm-number">200</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">read line<span class="cm-tab" role="presentation" cm-text="	">   </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-comment"># 在程序运行时输入字符串 result=`expr $a + $b + 100` (注意反撇号!)</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">eval <span class="cm-string">"</span><span class="cm-def">$line</span><span class="cm-string">"</span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-comment"># 经过实际测试 似乎没有双引号也可以？PPT上加上双引号的目的是什么？</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-comment"># 好像是为了处理输入为空的情况？需要测试！</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">echo</span> <span class="cm-def">$result</span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-comment"># 得到结果1300</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 197px;"></div><div class="CodeMirror-gutters" style="display: none; height: 197px;"></div></div></div></pre><p>&nbsp;</p><p><span>shell编程中的循环包括</span><code>while</code><span>循环和</span><code>for</code><span>循环，语法为：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell" style="break-inside: unset;"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3385px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">while</span> test <span class="cm-attribute">-r</span> lockfile <span class="cm-comment"># 也可以用 while [ -r lockfile ] 代替</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-keyword">do</span> list</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">done</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">while</span> test <span class="cm-attribute">-r</span> lockfile; <span class="cm-keyword">do</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-builtin">sleep</span> <span class="cm-number">5</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">done</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">while</span> test <span class="cm-attribute">-r</span> lockfile; <span class="cm-keyword">do</span> <span class="cm-builtin">sleep</span> <span class="cm-number">5</span>; <span class="cm-keyword">done</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># 上面实际上就是将换行符换成了分号</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># 每删除一个换行符就需要一个分号 测试发现分号后的空格可有可无</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">for</span> name <span class="cm-keyword">in</span> word1 word2 ...</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-keyword">do</span> list</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">done</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">for</span> name <span class="cm-comment"># 相当于 for name in $1 $2 ...</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-keyword">do</span> list</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">done</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 494px;"></div><div class="CodeMirror-gutters" style="display: none; height: 494px;"></div></div></div></pre><p><span>在循环结构中，可以使用</span><code>break</code><span>、</span><code>continue</code><span>、</span><code>exit</code><span>等命令，其中</span><code>break 2</code><span>命令可以退出两层循环，</span><code>exit 1</code><span>命令指定了进程结束后的返回码为</span><code>1</code><span>。</span></p><p>&nbsp;</p><p><span>shell中的函数基本语法为</span><code>name() {list;}</code><span>，函数定义完成之后，该函数名作为一个自定义内部命令执行，后面可以调用，调用时函数名后可以附加0个到多个参数，并在函数体内部以</span><code>$1</code><span>、</span><code>$2</code><span>或</span><code>$*</code><span>、</span><code>$@</code><span>等方式进行引用。函数体内部使用命令</span><code>return</code><span>规定返回码，</span><code>0</code><span>表示成功。</span></p><p>&nbsp;</p><h2 id='33-进程基础知识'><span>33 进程基础知识</span></h2><p><span>进程和程序的区别。</span></p><p>&nbsp;</p><p><span>进程的四个组成部分：</span></p><ul><li><p><span>指令段Text</span></p></li><li><p><span>用户数据段</span></p></li><li><p><span>用户栈段</span></p></li><li><p><span>系统数据段</span></p></li></ul><p>&nbsp;</p><p><span>进程虚拟地址空间的布局，详见PPT。</span></p><p>&nbsp;</p><p><span>进程的虚实地址转换，结合两级页表，VPN1表示页面目录的偏移量、VPN2表示页表项的偏移量，VPO表示到物理页面的虚拟页面的字偏移量。最终结果是，VPN1和VPN2转换成了PPN，而VPO直接变成了PPO（不变！）。</span></p><p>&nbsp;</p><p><span>进程的基本状态：</span></p><ul><li><p><span>进程在创建之后，主要有运行状态和睡眠状态（也叫阻塞状态、等待状态、挂起状态，等）</span></p></li><li><p><span>内核总是在分时处理运行状态的进程，而不顾哪些处于睡眠状态的进程</span></p></li><li><p><span>睡眠状态的进程，在满足条件后转化为运行状态</span></p></li></ul><p>&nbsp;</p><p><span>进程的调度：</span></p><ul><li><p><span>优先级：内核将可运行进程按优先级进行调度（高优先级优先）</span></p></li><li><p><span>进程的睡眠状态的进程一旦被叫醒后，被赋予高优先级，以保证其响应速度</span></p></li><li><p><span>用户程序用</span><code>nice()</code><span>系统调用可以有限地调整进程的优先级</span></p></li></ul><p>&nbsp;</p><p><span>命令</span><code>ps</code><span>可以用来查看进程信息：</span></p><ul><li><p><code>-e</code><span>选项：列出系统中所有的进程</span></p></li><li><p><code>-f</code><span>选项：以</span><code>full</code><span>格式列出每一个进程</span></p></li><li><p><code>-l</code><span>选项：以</span><code>long</code><span>格式列出每一个进程</span></p></li><li><p><span>列出的属性包括：</span></p><ul><li><p><code>UID</code><span>：用户ID（注册名）</span></p></li><li><p><code>PID</code><span>：进程ID</span></p></li><li><p><code>C</code><span>：CPU占用指数，不同系统算法不同</span></p></li><li><p><code>PPID</code><span>：父进程的</span><code>PID</code></p></li><li><p><code>STIME</code><span>：启动时间</span></p></li><li><p><code>SZ</code><span>：进程逻辑内存大小</span></p></li><li><p><code>TTY</code><span>：终端的名字</span></p></li><li><p><code>COMMAND</code><span>：命令名</span></p></li><li><p><code>WCHAN</code><span>：进程睡眠通道，进程阻塞在何处</span></p></li><li><p><code>TIME</code><span>：累计执行时间（占用CPU的时间）</span></p></li><li><p><code>PRI</code><span>：优先级</span></p></li><li><p><code>S</code><span>：状态，sleep/run/zombie</span></p></li></ul></li></ul><p>&nbsp;</p><p><span>进程的执行时间包括：</span></p><ul><li><p><code>real</code><span>时间：从进程开始到完成所花费的总时间，包括进程执行时实际使用的CPU时间、进程耗费在IO上的时间、其他进程所耗费的时间等</span></p></li><li><p><code>user</code><span>时间：进程执行用户态代码所耗费的CPU时间，该时间仅指进程执行时实际使用的CPU时间，而不包括其他进程所使用的时间和本进程阻塞的时间</span></p></li><li><p><code>sys</code><span>时间：进程在内核态运行所耗费的时间，即执行内核系统调用所耗费的CPU时间</span></p></li></ul><p>&nbsp;</p><p><span>与时间有关的函数包括：</span></p><ul><li><p><code>time()</code><span>：获取当前时间坐标，坐标原点是1970年1月1日0点</span></p></li><li><p><code>gettimeofday()</code><span>：获取当前时间坐标，坐标原点是1970年1月1日0点，可以精确到微秒（</span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="4.495ex" height="2.005ex" role="img" focusable="false" viewBox="0 -864 1986.7 886" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.05ex;"><defs><path id="MJX-3-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-3-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-3-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path><path id="MJX-3-TEX-N-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-3-TEX-N-31"></use><use data-c="30" xlink:href="#MJX-3-TEX-N-30" transform="translate(500,0)"></use></g><g data-mml-node="TeXAtom" transform="translate(1033,393.1) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mo"><use data-c="2212" xlink:href="#MJX-3-TEX-N-2212"></use></g><g data-mml-node="mn" transform="translate(778,0)"><use data-c="36" xlink:href="#MJX-3-TEX-N-36"></use></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>10</mn><mrow data-mjx-texclass="ORD"><mo>−</mo><mn>6</mn></mrow></msup></math></mjx-assistive-mml></mjx-container><script type="math/tex">10^{-6}</script><span>）</span></p></li><li><p><code>mktime</code><span>：将年月日时分秒转换为坐标值</span></p></li><li><p><code>ctime()</code><span>和</span><code>asctime()</code><span>、</span><code>localtime()</code><span>：坐标值和年月日时分秒的转换</span></p></li><li><p><code>strtfime</code><span>：定制表示日期和时间的字符串</span></p></li></ul><p>&nbsp;</p><p><span>在多任务中，“忙等待”是不可取的！</span></p><p>&nbsp;</p><h2 id='34-进程控制'><span>34 进程控制</span></h2><p><code>fork</code><span>系统调用是创建新进程的唯一方式，通过在内核上创建新的PCB来赋值父进程的环境（包括PCB和资源），原先的进程叫父进程，新创建的进程为子进程，其中：</span></p><ul><li><p><span>完全复制的有：新进程的指令、用户数据段、堆栈段</span></p></li><li><p><span>部分复制的有：系统数据段</span></p></li></ul><p>&nbsp;</p><p><code>fork</code><span>调用的返回值：</span></p><ul><li><p><span>父进程得到的</span><code>fork</code><span>返回值大于零（是子进程的</span><code>PID</code><span>）</span></p></li><li><p><span>子进程得到的</span><code>fork</code><span>返回值为零</span></p></li><li><p><span>失败时返回</span><code>-1</code></p></li></ul><p>&nbsp;</p><p><span>命令行参数和环境参数是位于进程堆栈底部的初始化数据，有三种方法可以访问环境参数：</span></p><ul><li><p><span>C库定义的外部变量</span><code>environ</code></p></li><li><p><code>main</code><span>函数的第三个参数</span></p></li><li><p><code>getenv</code><span>库函数调用</span></p></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="c" style="break-inside: unset;"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="c"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3385px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">main</span>() {</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">extern</span> <span class="cm-variable-3">char</span> <span class="cm-variable-3">**</span><span class="cm-variable">environ</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable-3">char</span> <span class="cm-variable-3">**</span><span class="cm-variable">p</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">p</span> <span class="cm-operator">=</span> <span class="cm-variable">environ</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">while</span> (<span class="cm-operator">*</span><span class="cm-variable">p</span>) <span class="cm-variable">printf</span>(<span class="cm-string">"[%s]\n"</span>, <span class="cm-operator">*</span><span class="cm-variable">p</span><span class="cm-operator">++</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">main</span>(<span class="cm-variable-3">int</span> <span class="cm-variable">argc</span>, <span class="cm-variable-3">char</span> <span class="cm-variable-3">**</span><span class="cm-variable">argv</span>, <span class="cm-variable-3">char</span> <span class="cm-variable-3">**</span><span class="cm-variable">env</span>) {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable-3">char</span> <span class="cm-variable-3">**</span><span class="cm-variable">p</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">p</span> <span class="cm-operator">=</span> <span class="cm-variable">env</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">while</span> (<span class="cm-operator">*</span><span class="cm-variable">p</span>) <span class="cm-variable">printf</span>(<span class="cm-string">"[%s]\n"</span>, <span class="cm-operator">*</span><span class="cm-variable">p</span><span class="cm-operator">++</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">main</span>() {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable-3">char</span> <span class="cm-variable-3">*</span><span class="cm-variable">p</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">p</span> <span class="cm-operator">=</span> <span class="cm-variable">getenv</span>(<span class="cm-string">"HOME"</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">if</span> (<span class="cm-variable">p</span>) <span class="cm-variable">printf</span>(<span class="cm-string">"[%s]\n"</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 444px;"></div><div class="CodeMirror-gutters" style="display: none; height: 444px;"></div></div></div></pre><p>&nbsp;</p><p><code>exec</code><span>系统调用可以用一个指定的程序文件重新初始化一个进程，可指定新的命令行参数和环境参数。注意，</span><code>exec</code><span>不创建新进程，只是将当前进程重新初始化了指令段和用户数据段、堆栈段以及CPU的PC指针。</span><code>exec</code><span>系统调用需要一到两个下面的选项：</span></p><ul><li><p><code>-l</code><span>：指定命令行参数的方式为表方式</span></p></li><li><p><code>-v</code><span>：指定命令行参数的方式为指针数组方式</span></p></li><li><p><code>-e</code><span>：需要指定</span><code>envp</code><span>来初始化进程</span></p></li><li><p><code>-p</code><span>：使用环境变量</span><code>PATH</code><span>查找可执行文件</span></p></li></ul><p><code>exec</code><span>系统调用有六种格式，详见PPT。</span></p><p>&nbsp;</p><p><code>wait</code><span>系统调用：</span></p><ul><li><p><span>功能：等待进程的子进程终止</span></p></li><li><p><span>如果已经有子进程终止，则立即返回</span></p></li></ul><p>&nbsp;</p><p><span>库函数</span><code>system</code><span>可以在C程序中运行一个linux命令，例如：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="c" style="break-inside: unset;"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="c"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3385px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable-3">int</span> <span class="cm-def">main</span>(<span class="cm-variable-3">void</span>)</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">{</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable-3">char</span> <span class="cm-variable">fname</span>[<span class="cm-number">256</span>], <span class="cm-variable">cmd</span>[<span class="cm-number">256</span>], <span class="cm-variable">buf</span>[<span class="cm-number">256</span>];</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">FILE</span> <span class="cm-operator">*</span><span class="cm-variable">f</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">sprintf</span>(<span class="cm-variable">fname</span>, <span class="cm-string">"/tmp/eth-status-%d.txt"</span>, <span class="cm-variable">getpid</span>());</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">sprintf</span>(<span class="cm-variable">cmd</span>, <span class="cm-string">"ifconfig -a &gt; %s"</span>, <span class="cm-variable">fname</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">printf</span>(<span class="cm-string">"Execute \"%s\"\n"</span>, <span class="cm-variable">cmd</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">system</span>(<span class="cm-variable">cmd</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">f</span> <span class="cm-operator">=</span> <span class="cm-variable">fopen</span>(<span class="cm-variable">fname</span>, <span class="cm-string">"r"</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">while</span> (<span class="cm-variable">fgets</span>(<span class="cm-variable">buf</span>, <span class="cm-keyword">sizeof</span> <span class="cm-variable">buf</span>, <span class="cm-variable">f</span>))</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">printf</span>(<span class="cm-string">"%s"</span>, <span class="cm-variable">buf</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">fclose</span>(<span class="cm-variable">f</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">printf</span>(<span class="cm-string">"Remove file \"%s\"\n"</span>, <span class="cm-variable">fname</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">unlink</span>(<span class="cm-variable">fname</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 370px;"></div><div class="CodeMirror-gutters" style="display: none; height: 370px;"></div></div></div></pre><p>&nbsp;</p><h2 id='35-重定向管道信号'><span>35 重定向、管道、信号</span></h2><p><span>磁盘文件目录分两级，包括：文件名、</span><code>i</code><span>节点。系统中活动文件目录AFD分为三级：</span></p><ul><li><p><span>文件描述符表FDT：每个进程一张，在PCB的user结构中，记录打开的文件</span></p></li><li><p><span>系统文件包SFT：整个核心一张，记录诸如读写要求、引用次数、读写位置等信息</span></p></li><li><p><span>活动</span><code>i</code><span>节点表：整个核心一张，</span><code>inode</code><span>结构</span></p></li></ul><p>&nbsp;</p><p><code>fork</code><span>创建的子进程继承父进程的文件描述符表FDT，并且对于父进程在</span><code>fork</code><span>之前打开的文件，父子进程有相同的文件偏移。（详见PPT，比较重要，AFD三级中只有一级被复制给了子进程，另外两级是共享的）</span></p><p>&nbsp;</p><p><span>如果文件设置了</span><code>close-on-exec</code><span>标志，那么在执行</span><code>exec()</code><span>时系统会自动关闭这些文件。</span></p><p>&nbsp;</p><p><span>重定向可以将已赋值的文件描述符重新赋值，通过</span><code>int dup2(int fd1, int fd2);</code><span>函数可以将文件描述符</span><code>fd1</code><span>复制到</span><code>fd2</code><span>上（</span><code>fd2</code><span>可以是空闲的文件描述符，如果是已打开的文件则关闭）。</span></p><p>&nbsp;</p><p><span>管道</span></p></div></div>
+</body>
+</html>
