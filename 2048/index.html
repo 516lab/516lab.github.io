@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Powered By Chr1ce</title>
+    <link rel="stylesheet" href="2048.css">
+    <script type="text/javascript" src="jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="support.js"></script>
+    <script type="text/javascript" src="animation.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+
+    <link rel="icon" type="image/x-ico" href="https://s3.bmp.ovh/imgs/2022/03/e5bdfdaeef63c461.png"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>2048 GAME</h1>
+        <h3>Powered By Chr1ce</h3>
+        <a href="javascript:newgame();" id="newgamebutton">New Game</a>
+        <p>score:<span id="score">0</span></p>
+    </header>
+
+    <div id="grid-container">
+        <div class="grid-cell" id="grid-cell-0-0"></div>
+        <div class="grid-cell" id="grid-cell-0-1"></div>
+        <div class="grid-cell" id="grid-cell-0-2"></div>
+        <div class="grid-cell" id="grid-cell-0-3"></div>
+        <div class="grid-cell" id="grid-cell-1-0"></div>
+        <div class="grid-cell" id="grid-cell-1-1"></div>
+        <div class="grid-cell" id="grid-cell-1-2"></div>
+        <div class="grid-cell" id="grid-cell-1-3"></div>
+        <div class="grid-cell" id="grid-cell-2-0"></div>
+        <div class="grid-cell" id="grid-cell-2-1"></div>
+        <div class="grid-cell" id="grid-cell-2-2"></div>
+        <div class="grid-cell" id="grid-cell-2-3"></div>
+        <div class="grid-cell" id="grid-cell-3-0"></div>
+        <div class="grid-cell" id="grid-cell-3-1"></div>
+        <div class="grid-cell" id="grid-cell-3-2"></div>
+        <div class="grid-cell" id="grid-cell-3-3"></div>
+    </div>
+
+    <img src="im.jpg" width="100%" height="100%" style="z-index:-100;position:fixed;left:0;top:0"/>
+
+    <meting-js
+        server="netease"
+        type="playlist"
+        id="7327046735"
+        fixed="true"
+        autoplay="true"
+        loop="all"
+        order="random"
+        preload="auto"
+        list-folded="ture"
+        list-max-height="500px"
+        lrc-type="1">
+    </meting-js>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+header {
+    text-align: center;
+    color: orange;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header #newgamebutton {
+    max-width: 20px auto;
+    width: 100px;
+    background-color:peru;
+    padding: 10px 10px;
+    text-align: center;
+    color: white;
+    font-family: fantasy;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+header #newgamebutton:hover {
+    max-width: 20px auto;
+    width: 100px;
+    background-color:rgb(3, 248, 236);
+    padding: 10px 10px;
+    text-align: center;
+    color: white;
+    font-family: fantasy;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+header p {
+    font-family: fantasy;
+    font-size: 15px;
+}
+
+#grid-container {
+    width: 500px;
+    height: 500px;
+    background-color: rgba(236, 118, 63, 0.2);
+    margin: 20px auto;
+
+    border-radius: 30px;
+    position: relative;
+}
+
+.grid-cell {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(250, 128, 114, 0.2);
+    position: absolute;
+    border-radius: 15px;
+}
+
+.number-cell {
+    border-radius: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 100px;
+    text-align: center;
+    position: absolute;
+}
+
+.gameover {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+}
+
+.gameover p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    color: white;
+    margin: 20px auto;
+    margin-top: 150px;
+}
+
+.gameover span {
+    color: white;
+    display: block;
+    margin: 20px auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+}
+
+#restartgamebutton {
+    display: block;
+    margin: 20px auto;
+    width: 180px;
+    padding: 10px 10px;
+    background-color:aqua;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+
+#restartgamebutton:hover {
+    background-color: chartreuse;
+}
